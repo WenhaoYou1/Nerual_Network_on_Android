@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  16 OCT 2023 00:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  16 OCT 2023 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,30 +695,30 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 49.
 LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
- 64.
+ 49.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -742,7 +742,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 64.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (./proposal.out) (./proposal.out)
 \@outlinefile=\write4
@@ -784,100 +784,85 @@ Package hyperref Info: Link coloring OFF on input line 64.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
- 65.
+ 50.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
- 65.
+ 50.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
- 65.
+ 50.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+<figure/idct.png, id=21, 307.1475pt x 208.78pt>
+File: figure/idct.png Graphic file (type png)
+<use figure/idct.png>
+Package pdftex.def Info: figure/idct.png  used on input line 70.
+(pdftex.def)             Requested size: 226.48395pt x 153.95pt.
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-<figure/idct.png, id=30, 307.1475pt x 208.78pt>
-File: figure/idct.png Graphic file (type png)
-<use figure/idct.png>
-Package pdftex.def Info: figure/idct.png  used on input line 117.
-(pdftex.def)             Requested size: 226.48395pt x 153.95pt.
+<figure/nestdnn_arch.png, id=43, 833.1125pt x 259.97125pt>
+File: figure/nestdnn_arch.png Graphic file (type png)
+<use figure/nestdnn_arch.png>
+Package pdftex.def Info: figure/nestdnn_arch.png  used on input line 93.
+(pdftex.def)             Requested size: 452.9679pt x 141.35028pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+01.
 
-Underfull \hbox (badness 1472) in paragraph at lines 127--128
-\OT1/ptm/m/n/12 sim-ple, ef-fi-cient, and cre-ative method to
- []
-
-[2
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.146 
-       <./figure/idct.png>]
-<figure/nestdnn_architecture.png, id=57, 689.57625pt x 195.73125pt>
-File: figure/nestdnn_architecture.png Graphic file (type png)
-<use figure/nestdnn_architecture.png>
-Package pdftex.def Info: figure/nestdnn_architecture.png  used on input line 14
-9.
-(pdftex.def)             Requested size: 452.9679pt x 128.57375pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-85.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.186 	
-       
+l.105 	\item \textbf
+                    {Seed Model:} The smallest pruned model generated in mod...
+ <./figure/idct.png>] [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.186 	
-        <./figure/nestdnn_architecture.png>]
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 218.
-
-Overfull \hbox (1300.87898pt too wide) in paragraph at lines 224--225
-[][] 
- []
-
-(./proposal.bbl [4]) [5] (./proposal.aux)
+l.141 \section
+              *{Project Timeline} <./figure/nestdnn_arch.png>]
+<./figure/timeline.png, id=66, 670.505pt x 176.66pt>
+File: ./figure/timeline.png Graphic file (type png)
+<use ./figure/timeline.png>
+Package pdftex.def Info: ./figure/timeline.png  used on input line 144.
+(pdftex.def)             Requested size: 452.9679pt x 119.34277pt.
+ (./proposal.bbl) [4 <./figure/timeline.png>] (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 146EBBB6DBC384853CBD3A9280110C78;547.
  ) 
 Here is how much of TeX's memory you used:
- 21413 strings out of 476025
- 401218 string characters out of 5790017
- 1867388 words of memory out of 5000000
- 41454 multiletter control sequences out of 15000+600000
- 534236 words of font info for 69 fonts, out of 8000000 for 9000
+ 21205 strings out of 476025
+ 396806 string characters out of 5790017
+ 1865388 words of memory out of 5000000
+ 41251 multiletter control sequences out of 15000+600000
+ 530261 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,80p,1008b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
-live/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (5 pages, 237162 bytes).
+ 84i,7n,80p,1009b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
+cal/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proposal.pdf (4 pages, 305415 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 47 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 52 words of extra memory for PDF output out of 10000 (max. 10000000)
 
