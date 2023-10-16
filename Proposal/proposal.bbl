@@ -7,4 +7,34 @@ C.~Zhao, G.~Dong, S.~Zhang, Z.~Tan, and A.~Basu.
 \newblock {\em IEEE Access}, September 2023.
 \newblock Department of Computing Science, University of Alberta, Edmonton, AB.
 
+\bibitem{fang2018nestdnn}
+Biyi Fang, Xiao Zeng, and Mi~Zhang.
+\newblock Nestdnn: Resource-aware multi-tenant on-device deep learning for
+  continuous mobile vision.
+\newblock pages 115--127, 10 2018.
+
+\bibitem{kim2016compression}
+Yong-Deok Kim, Eunhyeok Park, Sungjoo Yoo, Taelim Choi, Lu~Yang, and Dongjun
+  Shin.
+\newblock Compression of deep convolutional neural networks for fast and low
+  power mobile applications.
+\newblock 11 2015.
+
+\bibitem{akusok2019metal}
+Anton Akusok, Leonardo~Espinosa Leal, Kaj-Mikael Bj{\"o}rk, and Amaury
+  Lendasse.
+\newblock High-performance elm for memory constrained edge computing devices
+  with metal performance shaders.
+\newblock In Jiuwen Cao, Chi~Man Vong, Yoan Miche, and Amaury Lendasse,
+  editors, {\em Proceedings of ELM2019}, pages 79--88, Cham, 2021. Springer
+  International Publishing.
+
+\bibitem{Andrey2019Aibenchmark}
+Andrey Ignatov, Radu Timofte, William Chou, Ke~Wang, Max Wu, Tim Hartley, and
+  Luc Van~Gool.
+\newblock Ai benchmark: Running deep neural networks on android smartphones.
+\newblock In Laura Leal-Taix{\'e} and Stefan Roth, editors, {\em Computer
+  Vision -- ECCV 2018 Workshops}, pages 288--314, Cham, 2019. Springer
+  International Publishing.
+
 \end{thebibliography}

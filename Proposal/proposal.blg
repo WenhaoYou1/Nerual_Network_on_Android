@@ -3,44 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: proposal.aux
 The style file: unsrt.bst
 Database file #1: ref.bib
-You've used 1 entry,
+Warning--empty booktitle in fang2018nestdnn
+Warning--empty journal in kim2016compression
+You've used 5 entries,
             1791 wiz_defined-function locations,
-            451 strings with 3771 characters,
-and the built_in function-call counts, 217 in all, are:
-= -- 14
-> -- 17
-< -- 0
-+ -- 6
-- -- 5
-* -- 16
-:= -- 47
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 1
+            479 strings with 4782 characters,
+and the built_in function-call counts, 1677 in all, are:
+= -- 138
+> -- 107
+< -- 3
++ -- 36
+- -- 31
+* -- 119
+:= -- 267
+add.period$ -- 18
+call.type$ -- 5
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 8
-empty$ -- 15
-format.name$ -- 5
-if$ -- 41
+cite$ -- 7
+duplicate$ -- 76
+empty$ -- 136
+format.name$ -- 31
+if$ -- 379
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 9
-num.names$ -- 1
-pop$ -- 2
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 29
+num.names$ -- 9
+pop$ -- 24
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3
+skip$ -- 48
 stack$ -- 0
-substring$ -- 0
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 84
+swap$ -- 29
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 14
+warning$ -- 2
+while$ -- 15
+width$ -- 6
+write$ -- 59
+(There were 2 warnings)
