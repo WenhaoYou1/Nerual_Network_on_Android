@@ -1,3 +1,10 @@
+\documentclass{article}
+\usepackage[table]{xcolor}
+\usepackage{array}
+
+\newcolumntype{P}[1]{>{\raggedright\vrule height4ex width 0pt}p{#1}<{\vrule depth 2.5ex width 0pt}}
+
+
 \documentclass[UTF8]{article}
 \usepackage{cite}
 \usepackage[unicode,pdftex]{hyperref}
@@ -192,11 +199,35 @@ In this research, we are only going to put the compressed neural network to the 
 
 \section*{Timeline for Deep Distribution}
 
-xxxxxxxxxxxxxxxxxxxxxxxx
+% xxxxxxxxxxxxxxxxxxxxxxxx
 
-xxxxxxxxxxxxxxxxxxxxxxxx
+% xxxxxxxxxxxxxxxxxxxxxxxx
 
-xxxxxxxxxxxxxxxxxxxxxxxx
+% xxxxxxxxxxxxxxxxxxxxxxxx
+
+\begin{tabular}{|P{4cm}*{10}{|c}|}
+\hline
+\centering \raisebox{-2ex}[0pt][0pt]{Action plan} & \multicolumn{4}{c|}{2023} \\
+\cline{2-5}
+\multicolumn{1}{|c|}{\vphantom{$\Big|$}} &
+\scriptsize Sep & \scriptsize Oct & \scriptsize Nov & \scriptsize Dec \\
+\hline
+1. TEST1 &
+ \multicolumn{1}{c}{\cellcolor{gray}} &&& \\
+\hline
+2. TEST2 &
+ & \multicolumn{1}{c}{\cellcolor{gray}} && \\
+\hline
+3. TEST3 &
+&& \multicolumn{2}{c}{\cellcolor{gray}} \\
+\hline
+4. TEST4 &
+& \multicolumn{2}{c}{\cellcolor{gray}} & \\
+\hline
+5. TEST5 &
+ \multicolumn{2}{c}{\cellcolor{gray}} && \\
+\hline
+\end{tabular}
 
 \section*{Short Description of 5 LABS}
 
