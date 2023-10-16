@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  15 OCT 2023 20:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  15 OCT 2023 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,6 +650,16 @@ File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
 s/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen264
+\ar@mcellbox=\box67
+\extrarowheight=\dimen265
+\NC@list=\toks38
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box68
+)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -659,20 +669,20 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count307
 \Gm@cntv=\count308
 \c@Gm@tempcnt=\count309
-\Gm@bindingoffset=\dimen264
-\Gm@wd@mp=\dimen265
-\Gm@odd@mp=\dimen266
-\Gm@even@mp=\dimen267
-\Gm@layoutwidth=\dimen268
-\Gm@layoutheight=\dimen269
-\Gm@layouthoffset=\dimen270
-\Gm@layoutvoffset=\dimen271
-\Gm@dimlist=\toks38
+\Gm@bindingoffset=\dimen266
+\Gm@wd@mp=\dimen267
+\Gm@odd@mp=\dimen268
+\Gm@even@mp=\dimen269
+\Gm@layoutwidth=\dimen270
+\Gm@layoutheight=\dimen271
+\Gm@layouthoffset=\dimen272
+\Gm@layoutvoffset=\dimen273
+\Gm@dimlist=\toks39
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
-\l__pdf_internal_box=\box67
+\l__pdf_internal_box=\box69
 )
 
 LaTeX Warning: Unused global option(s):
@@ -715,16 +725,16 @@ Package hyperref Info: Link coloring OFF on input line 59.
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count311
-\scratchdimen=\dimen272
-\scratchbox=\box68
+\scratchdimen=\dimen274
+\scratchbox=\box70
 \nofMPsegments=\count312
 \nofMParguments=\count313
-\everyMPshowfont=\toks39
+\everyMPshowfont=\toks40
 \MPscratchCnt=\count314
-\MPscratchDim=\dimen273
+\MPscratchDim=\dimen275
 \MPnumerator=\count315
 \makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks40
+\everyMPtoPDFconversion=\toks41
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -799,37 +809,56 @@ Package pdftex.def Info: figure/idct.png  used on input line 107.
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2
+al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+<figure/nestdnn_architecture.png, id=47, 689.57625pt x 195.73125pt>
+File: figure/nestdnn_architecture.png Graphic file (type png)
+<use figure/nestdnn_architecture.png>
+Package pdftex.def Info: figure/nestdnn_architecture.png  used on input line 13
+9.
+(pdftex.def)             Requested size: 452.9679pt x 128.57375pt.
+ [2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.149 \section
-              *{What you Plan To Do} <./figure/idct.png>]
+l.169 
+       <./figure/idct.png>] [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.169 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.169 
+       <./figure/nestdnn_architecture.png>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-57.
+75.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) (./proposal.bbl) [3] (./proposal.aux)
+) (./proposal.bbl [4]) [5] (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 146EBBB6DBC384853CBD3A9280110C78;547.
  ) 
 Here is how much of TeX's memory you used:
- 21056 strings out of 476025
- 394275 string characters out of 5790017
+ 21137 strings out of 476025
+ 395626 string characters out of 5790017
  1864388 words of memory out of 5000000
- 41115 multiletter control sequences out of 15000+600000
+ 41188 multiletter control sequences out of 15000+600000
  530261 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,89p,1008b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,89p,1008b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (3 pages, 117971 bytes).
+Output written on proposal.pdf (5 pages, 228761 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 500000)
+ 47 words of extra memory for PDF output out of 10000 (max. 10000000)
 

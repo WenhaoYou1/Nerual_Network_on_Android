@@ -17,7 +17,7 @@
 \usepackage{tikz}
 \usetikzlibrary{fit, calc}
 \pagestyle{empty} 
-
+\usepackage{array}
 
 
 % \geometry{left=2.5cm, right=2.5cm, top=1.4cm, bottom=2.4cm}
@@ -132,46 +132,62 @@ In this section, we cover the methods about implementing neural network on the m
 Hardware accelerators such as the digital signal processors offer solutions to overcome these challenges. Many manufacturers have already produced the better hardware. For example, Apple presented the Metal Performance Shaders with support of CNNs accelerated by GPU. This is a solution built on top of the Metal API and allows custom perations. Since there is a experiment~\cite{akusok2019metal} which confirmed the feasibility of Big Data analysis on modern mobile devices. Moreover, the hardwares on Android devices are upgraded by four main companies, such as Qualcomm , HiSilicon, MediaTek, and Samsung~\cite{Andrey2019Aibenchmark}, which can be used for neural networks as well.
 
 \subsection{Algorithm NestDNN}\label{nestdnn}
-xxxxxxxxxxxxxxxxxxxxxxxx
+NestDNN is a framework that takes the dynamics of runtime resources into account to enable resourceaware multi-tenant on-device deep learning for mobile vision systems. NestDNN enables each deep learning model to offer flexible resource-accuracy trade-offs~\cite{fang2018nestdnn}. Fig.~\ref{nestdnn_arch} illustrates the architecture of NestDNN detailedly, which is split into an offline stage and an online stage. The offline stage consists of three phases: model pruning, model recovery, and model profiling~\cite{fang2018nestdnn}. In Table~\ref{table_nestdnn}, it illustrates all the terminologies involved in NestDNN.
 
-xxxxxxxxxxxxxxxxxxxxxxxx
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\linewidth]{figure/nestdnn_architecture.png}
+	\caption{NestDNN architecture~\cite{fang2018nestdnn}.}
+	\label{nestdnn_arch}
+\end{figure}
 
-xxxxxxxxxxxxxxxxxxxxxxxx
+\begin{table}
+	\label{table_nestdnn}
+	\centering
+	\begin{tabular}{|c|>{\centering\arraybackslash}p{8cm}|}
+		\hline
+		\textbf{Terminology}&\textbf{Explanation}\\
+		\hline
+		\textbf{Vanilla Model}&Off-the-shelf deep learning model (e.g., ResNet) trained on a given dataset (e.g., ImageNet). \\
+		\hline
+		\textbf{Pruned Model}&Intermediate result obtained in model pruning stage.\\
+		\hline
+		\textbf{Seed Model}&The smallest pruned model generated in model pruning which meets the minimum accuracy goal set by the user. It is also the starting point of model recovery stage.\\
+		\hline
+		\textbf{Descendant Model}&A model grown upon the seed model in model recovery stage. It has a unique resource-accuracy trade-off.\\
+		\hline
+		\textbf{Multi-Capacity Model}&The final descendant model that has the capacities of
+		all the previously generated descendant models.\\
+		\hline
+	\end{tabular}
+	\caption{Terminologies involved in NestDNN~\cite{fang2018nestdnn}.}
+\end{table}
+
 
 \subsection{Algorithm One-shot Whole Network Compression}\label{oneshot}
-xxxxxxxxxxxxxxxxxxxxxxxx
-
-xxxxxxxxxxxxxxxxxxxxxxxx
-
-xxxxxxxxxxxxxxxxxxxxxxxx
-
+"One-shot Whole Network Compression" is a simple way to compress CNNs to make them more suitable for fast and low-power applications on the mobile. This algorithm can be divided into three steps: rank selection, tensor decomposition, and fine-tuning. Each step can be implemented easily by using public tools such as VBMF for rank selection, Tucker decomposition for tensor decomposition, and Caffe for fine-tuning~\cite{kim2016compression}.
 
 \section*{What you Plan To Do}
-xxxxxxxxxxxxxxxxxxxxxxxx
+There are five sub-topics for implementing Frequency Regularization on the Android devices. The first one "Implement Frequency Regularization" have done in Basu's lab in University of Alberta (2023). The remaining topics will be finished before the lecture ends.
 
-xxxxxxxxxxxxxxxxxxxxxxxx
-
-xxxxxxxxxxxxxxxxxxxxxxxx
 
 \begin{itemize}
-	\item Temporal Distribution Learning:
-	Learn the distribution of temporal observations in a pixel, then classify if the pixel is foreground or background according to the distribution learned.
-	\item Spatio-Temporal Distribution Learning:
-	Incorporate the neighbouring information of pixels to improve the robustness and the efficiency of our background subtraction algorithm.
-	\item Distribution Learning Layer:
-	Devise a specific layer to learn the distribution.
-	\item High Level Distribution Representation:
-	Try to figure out what is the high level representation of distribution, what is the distribution of distribution.
-	\item Deep Distribution Learning for General Problem:
-	Extend the Deep Distribution Learning to other problems, instead of only used in background subtraction.
+	\item Implement Frequency Regularization: Implement the Frequency Regularization in order to compress the redundant information on nerual network. Make sure that the accuracy and velocity is acceptable for the nerual network.
+	
+	\item Configure Emulator: In this paper, we choose Android Studio as our emulator. Install it successfully on our own local machines.
+	
+	\item Implement PyTorch Library: Implement PyTorch Android libaray to the emulator. Collect and analyze the error information if we get.
+	
+	\item Adjust Dependencies: Potential errors may probably caused by Android PyTorch Library. Since the library on android lacks of improvement not as much as laptop.
+	
+	\item Adjust Frequency Regularization: We can also try to change something on the algorithm to let the new one fitting the Android system.
+	
 \end{itemize}
 
 \section*{How You Plan to Implement Your Ideas}
-xxxxxxxxxxxxxxxxxxxxxxxx
 
-xxxxxxxxxxxxxxxxxxxxxxxx
+In this research, we are only going to put the compressed neural network to the mobile devices and make it run on the emulator. 
 
-xxxxxxxxxxxxxxxxxxxxxxxx
 
 
 \section*{Timeline for Deep Distribution}
@@ -181,6 +197,18 @@ xxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxx
 
 xxxxxxxxxxxxxxxxxxxxxxxx
+
+\section*{Short Description of 5 LABS}
+
+Deploy the Frequency Regularization algorithm with the UNet (neural network) on the computer and adjust some parameters for the emulator. 
+
+Attempt to implement PyTorch on the emulator and summarize the error messages. 
+
+Analyze the error messages and try to do the debug process. 
+
+XXX
+
+Test all functions and neural networks to check the effectiveness and accuracy on the emulator after importing the compressed neural network. We compare the result between the computer and mobile devices. 
 
 
 
