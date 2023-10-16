@@ -5,11 +5,9 @@
 \newcolumntype{P}[1]{>{\raggedright\vrule height4ex width 0pt}p{#1}<{\vrule depth 2.5ex width 0pt}}
 
 
-\documentclass[UTF8]{article}
 \usepackage{cite}
 \usepackage[unicode,pdftex]{hyperref}
 \usepackage{enumerate}
-% \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{pslatex} 
 \usepackage{fancyhdr}
@@ -26,20 +24,18 @@
 \pagestyle{empty} 
 \usepackage{array}
 
-
 % \geometry{left=2.5cm, right=2.5cm, top=1.4cm, bottom=2.4cm}
 \usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1in, margin=1in]{geometry}
-% \usepackage[margin=1in]{geometry}
+
+
 \title{xxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxx}
 \author{Wenhao You(wyou1@ualberta.ca) Leo Chang(chewei@ualberta.ca)}
 \date{}
-
 
 \newcommand{\reffig}[1]{Fig. \ref{#1}}
 \newcommand{\refsec}[1]{Section \ref{#1}}
 % \newcommand{\refeq}[1]{Eq. \ref{#1}}
 \newcommand{\reftab}[1]{Table \ref{#1}}
-
 
 \fancyhead{}
 \lhead{\scriptsize Chenqiu Zhao}
@@ -50,11 +46,13 @@
 
 
 \newcommand{\chronoperiode}[7]{
-	\pgfmathsetmacro{\first}{(#2 - 2018)*12 + #3 - .9} % beginig of the peropd
-	\pgfmathsetmacro{\last}{(#4 - 2018)*12 + #5 - 1.1} % end of the period
-	\pgfmathsetmacro{\middle}{(\first+\last)/2} % position of the country name
+	\pgfmathsetmacro{\first}{(#2 - 2023)*12 + #3 - .9} % beginning of the period
+	\pgfmathsetmacro{\last}{(#4 - 2023)*12 + #5 - 1.1} % end of the period
+	\pgfmathsetmacro{\middle}{(\first+\last)/2} % position of the description
+	
 	\fill[#7] (\first,#6-1) rectangle (\last,#6) (\middle,#6-.5) node[white, font=\sf]{#1};
 }
+
 
 \definecolor{level1}{RGB}{200,10,20}
 \definecolor{brightube}{rgb}{0.82, 0.62, 0.91}
@@ -73,7 +71,7 @@
 	
 	
 	\section*{Abstract}
-	
+
 	xxxxxxxxxxxxxxxxxxxxxxxx
 	
 	xxxxxxxxxxxxxxxxxxxxxxxx
@@ -202,37 +200,28 @@ In this research, we are only going to put the compressed neural network to the 
 
 
 
-\section*{Timeline for Deep Distribution}
+\section*{Timeline}
 
-% xxxxxxxxxxxxxxxxxxxxxxxx
-
-% xxxxxxxxxxxxxxxxxxxxxxxx
-
-% xxxxxxxxxxxxxxxxxxxxxxxx
-
-\begin{tabular}{|P{4cm}*{10}{|c}|}
-\hline
-\centering \raisebox{-2ex}[0pt][0pt]{Action plan} & \multicolumn{4}{c|}{2023} \\
-\cline{2-5}
-\multicolumn{1}{|c|}{\vphantom{$\Big|$}} &
-\scriptsize Sep & \scriptsize Oct & \scriptsize Nov & \scriptsize Dec \\
-\hline
-1. TEST1 &
- \multicolumn{1}{c}{\cellcolor{gray}} &&& \\
-\hline
-2. TEST2 &
- & \multicolumn{1}{c}{\cellcolor{gray}} && \\
-\hline
-3. TEST3 &
-&& \multicolumn{2}{c}{\cellcolor{gray}} \\
-\hline
-4. TEST4 &
-& \multicolumn{2}{c}{\cellcolor{gray}} & \\
-\hline
-5. TEST5 &
- \multicolumn{2}{c}{\cellcolor{gray}} && \\
-\hline
-\end{tabular}
+\begin{tikzpicture}[x=9mm,y=7mm]
+	% draw the grid
+	\draw[help lines] (0,0) grid[step=1] (12, 4);
+	% \draw (0,0) grid[xstep=2,ystep=7] (12,7);
+	% put months and years under the x-axis
+	\foreach[count=\a] \aa in {10,...,12} {
+		\draw[gray] (4*\a-4,0) -- +(0,-7mm) node[pos=.5, below right, inner sep=1pt]{2023. $\aa$};
+		\foreach[count=\m] \mm in {Week1, Week2, Week3, Week4}
+		\node[font=\tiny,below,gray] at (4*\a+\m-4.5,0) {\mm};
+	}
+	
+	% plot the data
+	
+	\chronoperiode{Review of Existed Work}{2018}{10}{2018}{11}{1}{level1}
+	\chronoperiode{Experiments}{2018}{5}{2019}{1}{2}{cyan}
+	\chronoperiode{Paper Writing}{2018}{6}{2019}{5}{3}{brightube}
+	%      \chronoperiode{HLDR}{2019}{4}{2019}{11}{4}{fuchsia}
+	%      \chronoperiode{test}{2018}{4}{2019}{10}{1}{olive}
+	%      \chronoperiode{Incorporating spatial information}{2018}{10}{2019}{10}{2}{cyan}
+\end{tikzpicture}
 
 \section*{Short Description of 5 LABS}
 
