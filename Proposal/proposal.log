@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  16 OCT 2023 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  16 OCT 2023 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -837,9 +837,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.141 \section
-              *{Project Timeline} <./figure/nestdnn_arch.png>]
-<./figure/timeline.png, id=66, 670.505pt x 176.66pt>
+l.138 
+       <./figure/nestdnn_arch.png>]
+<./figure/timeline.png, id=68, 670.505pt x 176.66pt>
 File: ./figure/timeline.png Graphic file (type png)
 <use ./figure/timeline.png>
 Package pdftex.def Info: ./figure/timeline.png  used on input line 144.
@@ -849,20 +849,20 @@ Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 146EBBB6DBC384853CBD3A9280110C78;547.
  ) 
 Here is how much of TeX's memory you used:
- 21205 strings out of 476025
- 396806 string characters out of 5790017
+ 21207 strings out of 476025
+ 396841 string characters out of 5790017
  1865388 words of memory out of 5000000
- 41251 multiletter control sequences out of 15000+600000
+ 41252 multiletter control sequences out of 15000+600000
  530261 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,7n,80p,1009b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (4 pages, 305415 bytes).
+Output written on proposal.pdf (4 pages, 306479 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
+ 24 named destinations out of 1000 (max. 500000)
  52 words of extra memory for PDF output out of 10000 (max. 10000000)
 

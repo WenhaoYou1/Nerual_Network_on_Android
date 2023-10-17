@@ -3,47 +3,51 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: proposal.aux
 The style file: unsrt.bst
 Database file #1: ref.bib
+You're missing a field name---line 77 of file ref.bib
+ :  year = {2023}, 
+ :                 % 假设您在2023年访问了该网站
+I'm skipping whatever remains of this entry
 Warning--empty booktitle in fang2018nestdnn
 Warning--empty journal in kim2016compression
-You've used 5 entries,
+You've used 6 entries,
             1791 wiz_defined-function locations,
-            479 strings with 4782 characters,
-and the built_in function-call counts, 1677 in all, are:
-= -- 138
-> -- 107
+            482 strings with 4817 characters,
+and the built_in function-call counts, 1770 in all, are:
+= -- 144
+> -- 108
 < -- 3
-+ -- 36
++ -- 37
 - -- 31
-* -- 119
-:= -- 267
-add.period$ -- 18
-call.type$ -- 5
-change.case$ -- 5
+* -- 120
+:= -- 274
+add.period$ -- 19
+call.type$ -- 6
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 76
-empty$ -- 136
+cite$ -- 8
+duplicate$ -- 81
+empty$ -- 154
 format.name$ -- 31
-if$ -- 379
+if$ -- 404
 int.to.chr$ -- 0
-int.to.str$ -- 5
+int.to.str$ -- 6
 missing$ -- 5
-newline$ -- 29
+newline$ -- 32
 num.names$ -- 9
-pop$ -- 24
+pop$ -- 32
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 48
+skip$ -- 53
 stack$ -- 0
 substring$ -- 84
-swap$ -- 29
+swap$ -- 30
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
 while$ -- 15
-width$ -- 6
-write$ -- 59
-(There were 2 warnings)
+width$ -- 7
+write$ -- 65
+(There was 1 error message)
