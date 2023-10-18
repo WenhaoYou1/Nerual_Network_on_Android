@@ -98,11 +98,11 @@ Hardware accelerators such as the digital signal processors offer solutions to o
 NestDNN is a framework that takes the dynamics of runtime resources into account to enable resource-aware multi-tenant on-device deep learning for mobile vision systems. NestDNN enables each deep learning model to offer flexible resource-accuracy trade-offs~\cite{fang2018nestdnn}. Fig.~\ref{nestdnn_arch} illustrates the architecture of NestDNN in detail, which is split into an offline stage and an online stage. The offline stage consists of three phases: model pruning, model recovery, and model profiling~\cite{fang2018nestdnn}. There are five models involved in NestDNN as shown below:
 
 \begin{itemize}
-	\item \textbf{Vanilla Model:} Off-the-shelf deep learning model (e.g., ResNet) trained on a given dataset (e.g., ImageNet).
+	\item \textbf{Vanilla Model:} Off-the-shelf deep learning model (e.g., ResNet, VGG) trained on a given dataset (e.g., ImageNet, CIFAR-10).
 	
-	\item \textbf{Pruned Model:} Intermediate result obtained in model pruning stage.
+	\item \textbf{Pruned Model:} Intermediate result obtained in model pruning stage. Certain useless weights of the chosen neural network are removed, achieving a more efficient model.
 	
-	\item \textbf{Seed Model:} The smallest pruned model generated in model pruning which meets the minimum accuracy goal set by the user. It is also the starting point of model recovery stage.
+	\item \textbf{Seed Model:} It is the smallest pruned model generated in model pruning which meets the minimum accuracy goal set by the user. It is also the starting point of model recovery stage.
 	
 	\item \textbf{Descendant Model:} A model grown upon the seed model in model recovery stage. It has a unique resource-accuracy trade-off.
 	
@@ -152,18 +152,18 @@ For the class 414, we will only focus on the Frequency Regularization (FR). The 
 
 \section*{Short Description of 5 LABS}
 
-In this paper, we will divide the project into five labs (milestones), which can help us to double check our progress and adjust it timely.
+In this paper, we will divide the project into five labs (milestones), which can help us to double-check our progress and adjust it timely. Here are the short descriptions of 5 labs:
 
 \begin{itemize}
 	\item Deploy the Frequency Regularization algorithm with the UNet (one basic Neural Network) on the computer and adjust some parameters for the Android emulator. 
 	
 	\item Attempt to implement PyTorch library on the Android emulator and summarize the error messages in order to further analyze.
 	
-	\item Analyze the error messages and explore the methods to change PyTorch library on the Android.
+	\item Analyze the error messages and explore the methods to change the PyTorch library on Android.
 	
 	\item Attempt to change something on the FR algorithm to make it match the current Android system. 
 	
-	\item Test all functions and neural networks to check the effectiveness and accuracy on the Android system after importing the compressed neural network. We will compare the result between the computer and mobile devices. 
+	\item Test all functions and neural networks to check the effectiveness and accuracy of the Android system after importing the compressed neural network. We will compare the results between the computer and mobile devices. 
 	
 \end{itemize}
 
