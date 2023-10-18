@@ -120,29 +120,30 @@ The frequency regularization algorithm is divided into two steps, the dynamic ta
 
 
 \section*{What you Plan To Do}
+
 There are five sub-topics for implementing Frequency Regularization on Android devices. The first one "Implement Frequency Regularization" was done in Basu's lab at the University of Alberta (2023). The remaining topics are expected to be finished before the course ends.
 
 
 \begin{itemize}
-	\item \textbf{Implement Frequency Regularization:} Implement the Frequency Regularization in order to compress the redundant information on nerual network. Make sure that the accuracy and velocity is acceptable for the nerual network.
+	\item \textbf{Implement Frequency Regularization:} Implement the Frequency Regularization in order to compress the redundant information on the neural network. Make sure that the accuracy and velocity are acceptable for the neural network.
 	
 	\item \textbf{Configure Emulator:} In this paper, we choose Android Studio as our emulator. Install it successfully on our own local machines.
 	
-	\item \textbf{Implement PyTorch Library:} Implement PyTorch Android libaray to the emulator. Collect and analyze the error information if we get.
+	\item \textbf{Implement PyTorch Library:} Implement PyTorch Android library to the emulator. Collect and analyze the error information if we get it.
 	
-	\item \textbf{Adjust Dependencies:} Potential errors may probably caused by Android PyTorch Library. Since the library on android lacks of improvement not as much as laptop.
+	\item \textbf{Adjust Dependencies:} Potential errors may probably caused by Android PyTorch Library. Since the library on Android lacks improvement not as much as laptop.
 	
-	\item \textbf{Adjust Frequency Regularization:} We can also try to change something on the algorithm to let the new one fitting the Android system.
+	\item \textbf{Adjust Frequency Regularization:} We can also try to change something on the algorithm to let the new one fit the Android system.
 	
 \end{itemize}
 
 \section*{How You Plan to Implement Your Ideas}
 
-For the class 414, we will only focus on the Frequency Regularization (FR). The basic idea is to analyze the existed paper in Basu's lab~\cite{zhao2023frequency}. After that we also need to explore the basic structure of the PyTorch Mobile~\cite{pytorch_mobile}.
+For the class 414, we will only focus on the Frequency Regularization (FR). From our own perspectives, upgrading mobile hardware is impossible for two of us student researchers. And the existing algorithms NestDNN and "One-show Whole Network Compression" are not as accurate as FR. In order to do further research on FR, our basic and important idea is to analyze the existing paper in Basu's lab~\cite{zhao2023frequency}. After that, we also need to explore the basic structure of the PyTorch Mobile~\cite{pytorch_mobile}.
 
 
+\section*{Timeline for Whole Project (Class 414)}
 
-\section*{Timeline for FR implemented on Mobile Device (Class 414)}
 \begin{figure}[!h]
 \centering
 \includegraphics[width=1\textwidth]{./figure/timeline.png}
@@ -152,7 +153,7 @@ For the class 414, we will only focus on the Frequency Regularization (FR). The 
 
 \section*{Short Description of 5 LABS}
 
-In this paper, we will divide the project into five labs (milestones), which can help us to double-check our progress and adjust it timely. Here are the short descriptions of 5 labs:
+In this project, we plan to divide the project into five labs (milestones), which can help us to double-check our progress and adjust it timely. Here are the short descriptions of 5 labs:
 
 \begin{itemize}
 	\item Deploy the Frequency Regularization algorithm with the UNet (one basic Neural Network) on the computer and adjust some parameters for the Android emulator. 
