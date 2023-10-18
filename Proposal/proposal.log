@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  16 OCT 2023 18:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  17 OCT 2023 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,7 +806,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
-<figure/idct.png, id=21, 307.1475pt x 208.78pt>
+<figure/idct.png, id=29, 307.1475pt x 208.78pt>
 File: figure/idct.png Graphic file (type png)
 <use figure/idct.png>
 Package pdftex.def Info: figure/idct.png  used on input line 70.
@@ -815,7 +815,7 @@ Package pdftex.def Info: figure/idct.png  used on input line 70.
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-<figure/nestdnn_arch.png, id=43, 833.1125pt x 259.97125pt>
+<figure/nestdnn_arch.png, id=55, 833.1125pt x 259.97125pt>
 File: figure/nestdnn_arch.png Graphic file (type png)
 <use figure/nestdnn_arch.png>
 Package pdftex.def Info: figure/nestdnn_arch.png  used on input line 93.
@@ -837,32 +837,32 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.138 
-       <./figure/nestdnn_arch.png>]
-<./figure/timeline.png, id=68, 670.505pt x 176.66pt>
+l.132 	
+        <./figure/nestdnn_arch.png>]
+<./figure/timeline.png, id=78, 670.505pt x 176.66pt>
 File: ./figure/timeline.png Graphic file (type png)
 <use ./figure/timeline.png>
-Package pdftex.def Info: ./figure/timeline.png  used on input line 144.
+Package pdftex.def Info: ./figure/timeline.png  used on input line 148.
 (pdftex.def)             Requested size: 452.9679pt x 119.34277pt.
- (./proposal.bbl) [4 <./figure/timeline.png>] (./proposal.aux)
+ (./proposal.bbl [4 <./figure/timeline.png>]) [5] (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 146EBBB6DBC384853CBD3A9280110C78;547.
+(rerunfilecheck)             Checksum: 1CE1901459B5AE51890E37FB74A16B3B;718.
  ) 
 Here is how much of TeX's memory you used:
- 21207 strings out of 476025
- 396841 string characters out of 5790017
+ 21211 strings out of 476025
+ 396881 string characters out of 5790017
  1865388 words of memory out of 5000000
- 41252 multiletter control sequences out of 15000+600000
+ 41254 multiletter control sequences out of 15000+600000
  530261 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,80p,1009b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,7n,80p,1125b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (4 pages, 306479 bytes).
+Output written on proposal.pdf (5 pages, 307650 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 52 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 26 named destinations out of 1000 (max. 500000)
+ 60 words of extra memory for PDF output out of 10000 (max. 10000000)
 
