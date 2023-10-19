@@ -52,7 +52,7 @@
 	
 	\section*{Abstract}
 
-In general, neural networks require high-specification hardware because of their complexity. However, in daily life, people have the requirements for running neural network applications on their own mobile devices but have limited hardware. Even the researchers have to use the computer in their lab instead of running the pre-trained models by using mobile devices. In this proposal, we will focus on how to implement a simple and creative compression algorithm called Frequency Regularization (FR)~\cite{zhao2023frequency}, which is to compress a basic neural network on Android mobile devices. We also discuss another three existing methods to achieve the goal: upgrade hardware~\cite{akusok2019metal}, implement NestDNN~\cite{fang2018nestdnn}, and implement "One-shot Whole Network Compression"~\cite{kim2016compression}. The reason we did not choose to upgrade mobile hardware is that it is hard to upgrade hardware for only two of us. Moreover, the other two compression algorithms are too hard to implement and not as efficient as FR. That is why we chose FR to do further research.
+In general, neural networks require high-specification hardware because of their complexity. However, in daily life, people have the requirements for running neural network applications on their own mobile devices but have limited hardware. Even the researchers have to use the computer in their lab instead of running the pre-trained models by using mobile devices. In this proposal, we will focus on how to implement a simple and creative compression algorithm called Frequency Regularization (FR)~\cite{zhao2023frequency}, which is to compress a basic neural network on Android mobile devices. We also discuss another three existing methods to achieve the goal: upgrade hardware~\cite{akusok2019metal}, implement NestDNN~\cite{fang2018nestdnn}, and implement "One-shot Whole Network Compression"~\cite{kim2016compression}. The reason we did not choose to upgrade mobile hardware is that it is difficult to achieve in a short course time. Moreover, the other two compression algorithms are too hard to implement and not as efficient as FR. This is the reason we chose FR to do further research.
 
 % \textbf{Index Terms}: Compressed Neural Networks, Frequency Regularization, Limited Hardware Devices, Mobile Devices, UNet (?)
 
@@ -76,6 +76,10 @@ The new method, Frequency regularization, (FR)~\cite{zhao2023frequency} is based
 
 
 To implement neural networks on mobile devices, we need to discuss the limitations of hardware and its characteristics. Many popular deep learning libraries, such as PyTorch and TensorFlow, are not complete and perfect to implement directly on mobile devices. Thus, we need to edit some configurations to optimize for mobile devices. Using the implementation, we can convert our standard neural network models into a lighter version that fits the mobile devices' hardware better. Moreover, beyond this idea, we can also consider improving the hardware parts such as creating special neural network processors for the mobile. 
+
+% we need to find the shortcome of this algorithm
+% we need to provide a reference about enhancing privacy
+% contribution thanks
 
 In conclusion, this paper explores a simple, efficient, and creative method to run a large neural network on mobile devices based on the Frequency regularization algorithm. Our purpose is not only to accomplish this implementation, we want to ensure the performance is similar to the result running on high-specification hardware such as computers. We hope to provide a fast and secure neural network application experience on mobile devices.
 
@@ -113,10 +117,10 @@ NestDNN is a framework that takes the dynamics of runtime resources into account
 
 
 \subsection{Algorithm One-shot Whole Network Compression}\label{oneshot}
-"One-shot Whole Network Compression" is a simple way to compress CNNs to make them more suitable for fast and low-power applications on the mobile. This algorithm can be divided into three steps: rank selection, tensor decomposition, and fine-tuning. Each step can be implemented easily by using public tools such as VBMF for rank selection, Tucker decomposition for tensor decomposition, and Caffe for fine-tuning~\cite{kim2016compression}.
+``One-shot Whole Network Compression" is a simple way to compress CNNs to make them more suitable for fast and low-power applications on the mobile. This algorithm can be divided into three steps: rank selection, tensor decomposition, and fine-tuning. Each step can be implemented easily by using public tools such as VBMF for rank selection, Tucker decomposition for tensor decomposition, and Caffe for fine-tuning~\cite{kim2016compression}.
 
 \subsection{Frequency Regularization}\label{fr}
-The frequency regularization algorithm is divided into two steps, the dynamic tail-truncation and inverse discrete cosine transform (IDCT). The dynamic tail-truncation involves retaining parameters in the frequency domain when training the neural networks. The segments that depict high-frequency zigzag information are truncated. This procedure is executed using a dot product with a zigzag mask matrix to maintain differentiability. ~\cite{zhao2023frequency}. After the procedure, the algorithm utilizes IDCT to rebuild the spatial tensors, which are subsequently employed as standard learning kernels in the networks.
+The frequency regularization algorithm is divided into two steps, the dynamic tail-truncation and inverse discrete cosine transform (IDCT). The dynamic tail-truncation involves retaining parameters in the frequency domain when training the neural networks. The segments that depict high-frequency zigzag information are truncated. This procedure is executed using a dot product with a zigzag mask matrix to maintain differentiability ~\cite{zhao2023frequency}. After the procedure, the algorithm utilizes IDCT to rebuild the spatial tensors, which are subsequently employed as standard learning kernels in the networks.
 
 
 \section*{What you Plan To Do}
