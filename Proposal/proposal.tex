@@ -39,7 +39,7 @@
 \newcommand{\reftab}[1]{Table \ref{#1}}
 
 \fancyhead{}
-\lhead{\scriptsize Chenqiu Zhao}
+%\lhead{\scriptsize Chenqiu Zhao}
 \rhead{\scriptsize research Proposal}
 
 \renewcommand{\headrulewidth}{0pt}
@@ -59,7 +59,9 @@ In general, neural networks require high-specification hardware because of their
 
 	\section*{Introduction}
 	
-Neural networks have been implemented in many applications and performed great results. However, these neural networks are usually implemented on high-specification hardware such as computers since there are many parameters in different neural networks. The more parameters in the neural networks, the more storage and internet transmission rates are occupied. In this research, we try to look for a method that can make the neural networks run on a limited hardware device, such as a mobile device. Although mobile devices have more enhanced hardware nowadays, because of their limited size, the efficacy is still not as powerful as the computers. There are several benefits of running the neural networks on limited hardware devices, specifically, mobile devices. The most important parts are the privacy and the data security. Processing data on-device ensures that personal information does not need to be uploaded or transmitted to the cloud servers, which enhances privacy. 
+Neural networks have been implemented in many applications and performed great results. However, these neural networks are usually implemented on high-specification hardware such as computers. The reason is because there are many parameters in different neural networks. The more parameters in the neural networks, the more storage and internet transmission rates are occupied. In this research, we try to look for a method that can make the neural networks run on a limited hardware device, such as a mobile device. Although mobile devices have more enhanced hardware nowadays, because of their limited size, the efficacy is still not as powerful as the computers. There are several benefits of running the neural networks on limited hardware devices, specifically, mobile devices. The most important parts are the privacy and the data security. Processing data on-device ensures that personal information does not need to be uploaded or transmitted to the cloud servers, which enhances privacy. 
+
+% in the privacy section, add the citation of this paper: https://arxiv.org/pdf/1809.03428.pdf
 
 Running neural networks on mobile devices can also bring other advantages. If we can implement the neural network models directly on mobile devices, it can reduce our dependence on the internet connection to some extent. Since mobile devices play a significant role in our daily lives, the procedures can be accessed easily. Moreover, for some applications that need real-time feedback, such as object recognition and image segmentation, neural networks on mobile devices can also make the process faster to improve user experience. The most important part of modern life is that we can keep the data processing and inference in the internal system of mobile devices rather than sending it to a remote server, which can increase the processing speed.
 
@@ -75,12 +77,19 @@ The new method, Frequency regularization, (FR)~\cite{zhao2023frequency} is based
 \end{wrapfigure}
 
 
-To implement neural networks on mobile devices, we need to discuss the limitations of hardware and its characteristics. Many popular deep learning libraries, such as PyTorch and TensorFlow, are not complete and perfect to implement directly on mobile devices. Thus, we need to edit some configurations to optimize for mobile devices. Using the implementation, we can convert our standard neural network models into a lighter version that fits the mobile devices' hardware better. Moreover, beyond this idea, we can also consider improving the hardware parts such as creating special neural network processors for the mobile. 
+% in presentation
+% To implement neural networks on mobile devices, we need to discuss the limitations of hardware and its characteristics. Many popular deep learning libraries, such as PyTorch and TensorFlow, are not complete and perfect to implement directly on mobile devices. Thus, we need to edit some configurations to optimize for mobile devices. Using the implementation, we can convert our standard neural network models into a lighter version that fits the mobile devices' hardware better. Moreover, beyond this idea, we can also consider improving the hardware parts such as creating special neural network processors for the mobile. 
 
-% we need to find the shortcome of this algorithm
+% check the text below
+The known short come of this algorithm is the training speed compare to other training method is slower. To apply Frequency Regularization on the neural network and implement on the mobile devices, we will encounter two challenges. (i) The PyTorch library may not be capable with this new algorithm. Therefore, we need to adjust some parameters. (ii) The mobile hardware limitation that can restrict the algorithm to run. 
+
+From the above paper mentioned, Frequency Regularization performs a better compression and works on most general neural networks ~\cite{zhao2023frequency}. Combining the best of our knowledge, we believe this research contributes as the first implementation of applying the Frequency Regularization to the neural networks but on the limited hardware devices, specifically, mobile devices.
+% end check
+
+% we need to find the short come of this algorithm
 % we need to provide a reference about enhancing privacy
 % main contribution 
-% see: https://arxiv.org/pdf/1809.03428.pdf
+
 
 In conclusion, this paper explores a simple, efficient, and creative method to run a large neural network on mobile devices based on the Frequency regularization algorithm. Our purpose is not only to accomplish this implementation, we want to ensure the performance is similar to the result running on high-specification hardware such as computers. We hope to provide a fast and secure neural network application experience on mobile devices.
 
