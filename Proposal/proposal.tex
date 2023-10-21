@@ -52,7 +52,7 @@
 	
 	\section*{Abstract}
 
-In general, neural networks require high-specification hardware because of their complexity. However, in daily life, people have the requirements for running neural network applications on their own mobile devices but have limited hardware. Even the researchers have to use the computer in their lab instead of running the pre-trained models by using mobile devices. In this proposal, we will focus on how to implement a simple and creative compression algorithm called Frequency Regularization (FR)~\cite{zhao2023frequency}, which is to compress a basic neural network on Android mobile devices. We also discuss another three existing methods to achieve the goal: upgrade hardware~\cite{akusok2019metal}, implement NestDNN~\cite{fang2018nestdnn}, and implement "One-shot Whole Network Compression"~\cite{kim2016compression}. The reason we did not choose to upgrade mobile hardware is that it is difficult to achieve in a short course time. Moreover, the other two compression algorithms are too hard to implement and not as efficient as FR. This is the reason we chose FR to do further research.
+In general, neural networks require high-specification hardware because of their complexity. However, in daily life, people have the requirements for running neural network applications on their own mobile devices but have limited hardware. Even the researchers have to use the computer in their lab instead of running the pre-trained models by using mobile devices. In this proposal, we will focus on how to implement a simple and creative compression algorithm called Frequency Regularization (FR)~\cite{zhao2023frequency}, which is to compress a basic neural network on Android mobile devices. We also discuss another three existing methods to achieve the goal: upgrade hardware~\cite{akusok2019metal}, implement NestDNN~\cite{fang2018nestdnn}, and implement ``One-shot Whole Network Compression"~\cite{kim2016compression}. The reason we did not choose to upgrade mobile hardware is that it is difficult to achieve in a short course time. Moreover, the other two compression algorithms are more difficult to implement and not as efficient as FR. Hence, it is the reason we chose FR to do further research.
 
 % \textbf{Index Terms}: Compressed Neural Networks, Frequency Regularization, Limited Hardware Devices, Mobile Devices, UNet (?)
 
@@ -65,7 +65,7 @@ Neural networks have been implemented in many applications and performed great r
 
 Running neural networks on mobile devices can also bring other advantages. If we can implement the neural network models directly on mobile devices, it can reduce our dependence on the internet connection to some extent. Since mobile devices play a significant role in our daily lives, the procedures can be accessed easily. Moreover, for some applications that need real-time feedback, such as object recognition and image segmentation, neural networks on mobile devices can also make the process faster to improve user experience. The most important part of modern life is that we can keep the data processing and inference in the internal system of mobile devices rather than sending it to a remote server, which can increase the processing speed.
 
-The new method, Frequency regularization, (FR)~\cite{zhao2023frequency} is based on the frequency domain to compress the neural network. It is divided into two steps: dynamic tail-truncation and inverse discrete cosine transform (IDCT). The main idea of this method is that some of the neural network parameters may be redundant in their representation. The algorithm focuses on using the frequency domain transform for network regularization to restrict information redundancy during the training process and introduce FR as shown in Fig.~\ref{idct}. Therefore, the redundant part can be removed without any side effect on the performance of the network.
+The new method, Frequency regularization (FR)~\cite{zhao2023frequency}, is based on the frequency domain to compress the neural network. It is divided into two steps: dynamic tail-truncation and inverse discrete cosine transform (IDCT). The main idea of this method is that some of the neural network parameters may be redundant in their representation. The algorithm focuses on using the frequency domain transform for network regularization to restrict information redundancy during the training process and introduce FR as shown in Fig.~\ref{idct}. Therefore, the redundant part can be removed without any side effect on the performance of the network.
 
 \begin{wrapfigure}{l}{0.5\textwidth}
 	\vspace{-15pt}    % 对应高度1
@@ -81,7 +81,7 @@ The new method, Frequency regularization, (FR)~\cite{zhao2023frequency} is based
 % To implement neural networks on mobile devices, we need to discuss the limitations of hardware and its characteristics. Many popular deep learning libraries, such as PyTorch and TensorFlow, are not complete and perfect to implement directly on mobile devices. Thus, we need to edit some configurations to optimize for mobile devices. Using the implementation, we can convert our standard neural network models into a lighter version that fits the mobile devices' hardware better. Moreover, beyond this idea, we can also consider improving the hardware parts such as creating special neural network processors for the mobile. 
 
 % check the text below
-The known short come of this algorithm is the training speed compare to other training method is slower. To apply Frequency Regularization on the neural network and implement on the mobile devices, we will encounter two challenges. (i) The PyTorch library may not be capable with this new algorithm. Therefore, we need to adjust some parameters. (ii) The mobile hardware limitation that can restrict the algorithm to run. 
+The known short come of this algorithm is the training speed compare to other training method, which is slower. To apply Frequency Regularization on the neural network and implement on the mobile devices, we will encounter two challenges. (i) The PyTorch library may not be capable with this new algorithm. Therefore, we need to adjust some parameters. (ii) The mobile hardware limitation that can restrict the algorithm to run. 
 
 From the above paper mentioned, Frequency Regularization performs a better compression and works on most general neural networks ~\cite{zhao2023frequency}. Combining the best of our knowledge, we believe this research contributes as the first implementation of applying the Frequency Regularization to the neural networks but on the limited hardware devices, specifically, mobile devices.
 % end check
@@ -134,7 +134,7 @@ The frequency regularization algorithm is divided into two steps, the dynamic ta
 
 
 \section*{What you Plan To Do}
-There are five sub-topics for implementing Frequency Regularization on Android devices. The first one "Implement Frequency Regularization" was done in Basu's lab at the University of Alberta (2023). The remaining topics are expected to be finished before the course ends.
+There are five sub-topics for implementing Frequency Regularization on Android devices. The first one ``Implement Frequency Regularization" was done in Basu's lab at the University of Alberta (2023). The remaining topics are expected to be finished before the course ends.
 
 
 \begin{itemize}
@@ -152,14 +152,14 @@ There are five sub-topics for implementing Frequency Regularization on Android d
 
 \section*{How You Plan to Implement Your Ideas}
 
-For the class 414, we will only focus on the Frequency Regularization (FR). The basic idea is to analyze the existed paper in Basu's lab~\cite{zhao2023frequency}. After that we also need to explore the basic structure of the PyTorch Mobile~\cite{pytorch_mobile}.
+For the class 414, we will only focus on the Frequency Regularization (FR). The basic idea is to analyze the existed paper in Basu's lab~\cite{zhao2023frequency}. After that, we also need to explore the basic structure of the PyTorch Mobile~\cite{pytorch_mobile}.
 
-
-
-\section*{Timeline for FR implemented on Mobile Device (Class 414)}
+Below figure shows the timeline that we are planning for the implementation. 
+% \section*{Timeline for FR implemented on Mobile Device (Class 414)}
 \begin{figure}[!h]
 \centering
 \includegraphics[width=1\textwidth]{./figure/timeline.png}
+\caption{Timeline for FR implementation on Mobile Devices}
  \label{timeline_fig}
 \end{figure}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.20)  21 OCT 2023 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.20)  21 OCT 2023 14:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -845,24 +845,30 @@ l.144
 <./figure/timeline.png, id=79, 670.505pt x 176.66pt>
 File: ./figure/timeline.png Graphic file (type png)
 <use ./figure/timeline.png>
-Package pdftex.def Info: ./figure/timeline.png  used on input line 162.
+Package pdftex.def Info: ./figure/timeline.png  used on input line 161.
 (pdftex.def)             Requested size: 452.9679pt x 119.34277pt.
- (./proposal.bbl [4 <./figure/timeline.png>]) [5] (./proposal.aux)
+ (./proposal.bbl [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.18 
+      <./figure/timeline.png>]) [5] (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 1CE1901459B5AE51890E37FB74A16B3B;718.
  ) 
 Here is how much of TeX's memory you used:
  21211 strings out of 476025
- 396881 string characters out of 5790016
+ 396879 string characters out of 5790016
  1864388 words of memory out of 5000000
  41254 multiletter control sequences out of 15000+600000
  530261 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,80p,1132b,553s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,7n,80p,1144b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (5 pages, 307719 bytes).
+Output written on proposal.pdf (5 pages, 307427 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
