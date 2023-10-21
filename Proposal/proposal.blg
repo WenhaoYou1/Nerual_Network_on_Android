@@ -1,9 +1,7 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: proposal.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
-Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: ref.bib
 You're missing a field name---line 77 of file ref.bib
  :  year = {2023}, 
@@ -11,36 +9,37 @@ You're missing a field name---line 77 of file ref.bib
 I'm skipping whatever remains of this entry
 Warning--empty booktitle in fang2018nestdnn
 Warning--empty journal in kim2016compression
-You've used 6 entries,
+Warning--empty journal in wang2018privacy
+You've used 7 entries,
             1791 wiz_defined-function locations,
-            482 strings with 4817 characters,
-and the built_in function-call counts, 1770 in all, are:
-= -- 144
-> -- 108
+            486 strings with 5005 characters,
+and the built_in function-call counts, 1970 in all, are:
+= -- 155
+> -- 128
 < -- 3
-+ -- 37
-- -- 31
-* -- 120
-:= -- 274
-add.period$ -- 19
-call.type$ -- 6
-change.case$ -- 6
++ -- 44
+- -- 37
+* -- 136
+:= -- 312
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 81
-empty$ -- 154
-format.name$ -- 31
-if$ -- 404
+cite$ -- 10
+duplicate$ -- 89
+empty$ -- 168
+format.name$ -- 37
+if$ -- 443
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 5
-newline$ -- 32
-num.names$ -- 9
-pop$ -- 32
+int.to.str$ -- 7
+missing$ -- 6
+newline$ -- 37
+num.names$ -- 10
+pop$ -- 37
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 53
+skip$ -- 56
 stack$ -- 0
 substring$ -- 84
 swap$ -- 30
@@ -48,8 +47,8 @@ text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 15
-width$ -- 7
-write$ -- 65
+warning$ -- 3
+while$ -- 16
+width$ -- 8
+write$ -- 74
 (There was 1 error message)
