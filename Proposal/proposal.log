@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  25 OCT 2023 20:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  25 OCT 2023 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,7 +806,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
-<figure/idct.png, id=51, 307.1475pt x 208.78pt>
+<figure/idct.png, id=75, 307.1475pt x 208.78pt>
 File: figure/idct.png Graphic file (type png)
 <use figure/idct.png>
 Package pdftex.def Info: figure/idct.png  used on input line 72.
@@ -819,7 +819,7 @@ Underfull \hbox (badness 3492) in paragraph at lines 86--88
 \OT1/ptm/m/n/12 quency Reg-u-lar-iza-tion per-forms a bet-ter
  []
 
-<figure/nestdnn_arch.png, id=78, 833.1125pt x 259.97125pt>
+<figure/nestdnn_arch.png, id=100, 833.1125pt x 259.97125pt>
 File: figure/nestdnn_arch.png Graphic file (type png)
 <use figure/nestdnn_arch.png>
 Package pdftex.def Info: figure/nestdnn_arch.png  used on input line 107.
@@ -843,7 +843,7 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.142 	
         <./figure/nestdnn_arch.png>]
-<./figure/timeline.png, id=102, 670.505pt x 176.66pt>
+<./figure/timeline.png, id=122, 670.505pt x 176.66pt>
 File: ./figure/timeline.png Graphic file (type png)
 <use ./figure/timeline.png>
 Package pdftex.def Info: ./figure/timeline.png  used on input line 161.
@@ -866,26 +866,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--208
  []
 
 (./proposal.bbl [5]) [6] (./proposal.aux)
-Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: A2EE51566EE9BA4CEE68699A7500E46D;1017.
+
+Package rerunfilecheck Warning: File `proposal.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `proposal.out':
+(rerunfilecheck)             Before: CBE017528DE68D4A5CE83A419F6A74CE;2690
+(rerunfilecheck)             After:  E19492674163A5FBA9ED3894B659DCC1;2932.
  ) 
 Here is how much of TeX's memory you used:
- 21237 strings out of 476025
- 397174 string characters out of 5790017
+ 21248 strings out of 476025
+ 397303 string characters out of 5790017
  1864388 words of memory out of 5000000
- 41262 multiletter control sequences out of 15000+600000
+ 41268 multiletter control sequences out of 15000+600000
  534995 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,7n,80p,1144b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local
-/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (6 pages, 329750 bytes).
+
+pdfTeX warning (dest): name{subsection.6.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.6.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.6.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.6.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.6.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/202
+3/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proposal.pdf (6 pages, 330401 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 100 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -50,14 +50,14 @@
 	\maketitle
 	%\vspace{-90pt}
 	
-	\section*{Abstract}
+	\section{Abstract}
 
 In general, neural networks require high-specification hardware because of their complexity. However, in daily life, people have the requirements for running neural network applications on their own mobile devices but have limited hardware. Even the researchers have to use the computer in their lab instead of running the pre-trained models by using mobile devices. In this proposal, we will focus on how to implement a simple and creative compression algorithm called Frequency Regularization (FR)~\cite{zhao2023frequency}, which is to compress a basic neural network on Android mobile devices. We also discuss another three existing methods to achieve the goal: upgrade hardware~\cite{akusok2019metal}, implement NestDNN~\cite{fang2018nestdnn}, and implement ``One-shot Whole Network Compression"~\cite{kim2016compression}. The reason we did not choose to upgrade mobile hardware is that it is difficult to achieve in a short course time. Moreover, the other two compression algorithms are more difficult to implement and not as efficient as FR. Hence, it is the reason we chose FR to do further research.
 
 % \textbf{Index Terms}: Compressed Neural Networks, Frequency Regularization, Limited Hardware Devices, Mobile Devices, UNet (?)
 
 
-	\section*{Introduction}
+	\section{Introduction}
 	
 Neural networks have been implemented in many applications and performed great results. However, these neural networks are usually implemented on high-specification hardware such as computers. The reason is because there are many parameters in different neural networks. The more parameters in the neural networks, the more storage and internet transmission rates are occupied. In this research, we try to look for a method that can make the neural networks run on a limited hardware device, such as a mobile device. Although mobile devices have more enhanced hardware nowadays, because of their limited size, the efficacy is still not as powerful as the computers. There are several benefits of running the neural networks on limited hardware devices, specifically, mobile devices. The most important parts are the privacy~\cite{wang2018privacy} and the data security. Processing data on-device ensures that personal information does not need to be uploaded or transmitted to the cloud servers, which enhances privacy~\cite{wang2018privacy}. 
 
@@ -94,7 +94,7 @@ From the above paper mentioned, Frequency Regularization performs a better compr
 In conclusion, this paper explores a simple, efficient, and creative method to run a large neural network on mobile devices based on the Frequency regularization algorithm. Our purpose is not only to accomplish this implementation, we want to ensure the performance is similar to the result running on high-specification hardware such as computers. We hope to provide a fast and secure neural network application experience on mobile devices.
 
 
-\section*{Brief Summary of Existing Work}
+\section{Brief Summary of Existing Work}
 
 We cover the methods for implementing neural networks on the mobile over four sections. In Section~\ref{upgrade_hardware}, upgrading hardware on mobile devices and which parts are introduced. At the algorithm level, there is an algorithm called NestDNN~\cite{fang2018nestdnn} based on the dynamics or runtime resources to enable resource-aware multi-tenant on-device deep learning for mobile vision systems as shown in Section~\ref{nestdnn}. Moreover, there is an algorithm called “one-shot whole network compression”~\cite{kim2016compression} to compress convolutional neural networks (CNNs) for mobile deployment as shown in Section~\ref{oneshot}. There is also an algorithm named Frequency Regularization that helps compress the neural network by using the idea of reducing the redundancy information during the training process. The general steps are as shown and introduced in Section~\ref{fr}.
 
@@ -133,7 +133,7 @@ NestDNN is a framework that takes the dynamics of runtime resources into account
 The frequency regularization algorithm is divided into two steps, the dynamic tail-truncation and inverse discrete cosine transform (IDCT). The dynamic tail-truncation involves retaining parameters in the frequency domain when training the neural networks. The segments that depict high-frequency zigzag information are truncated. This procedure is executed using a dot product with a zigzag mask matrix to maintain differentiability ~\cite{zhao2023frequency}. After the procedure, the algorithm utilizes IDCT to rebuild the spatial tensors, which are subsequently employed as standard learning kernels in the networks.
 
 
-\section*{What you Plan To Do}
+\section{What you Plan To Do}
 There are five sub-topics for implementing Frequency Regularization on Android devices. The first one ``Implement Frequency Regularization" was done in Basu's lab at the University of Alberta (2023). The remaining topics are expected to be finished before the course ends.
 
 
@@ -150,7 +150,7 @@ There are five sub-topics for implementing Frequency Regularization on Android d
 	
 \end{itemize}
 
-\section*{How You Plan to Implement Your Ideas}
+\section{How You Plan to Implement Your Ideas}
 
 For the class 414, we will only focus on the Frequency Regularization (FR). The basic idea is to analyze the existed paper in Basu's lab~\cite{zhao2023frequency}. After that, we also need to explore the basic structure of the PyTorch Mobile~\cite{pytorch_mobile}.
 
@@ -164,7 +164,7 @@ Below figure shows the timeline that we are planning for the implementation.
 \end{figure}
 
 
-\section*{Short Description of 5 LABS}
+\section{Short Description of 5 LABS}
 
 In this paper, we will divide the project into five labs (milestones), which can help us to double check our progress and adjust it timely.
 
@@ -182,11 +182,11 @@ In this paper, we will divide the project into five labs (milestones), which can
 \end{itemize}
 
 
-\section*{Literature Review}
-\subsection{}
+\section{Literature Review}
+\subsection{Review of High-Performance ELM}
 
 
-\subsection{}
+\subsection{Review of AI Benchmark}
 
 
 \subsection{Review of NestDNN}
@@ -209,10 +209,10 @@ Anc, pos,  neg denotes a triplet includes an anchor image, a positive image, and
 In the existing experiment~\cite{fang2018nestdnn}, we can find that NestDNN achieves up to a 4.2\% increase in inference accuracy, doubles the video frame processing rate, and reduces energy consumption by 1.7 times. Because of this experimental result, NestDNN is indeed a useful and easy method for deploying deep learning on mobile devices.
 
 
-\subsection{}
+\subsection{Review of One-shot Whole Network Compression}
 
 
-\subsection{}
+\subsection{Review of Frequency Regularization}
 
 
 
