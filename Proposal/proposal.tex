@@ -210,7 +210,20 @@ In the existing experiment~\cite{fang2018nestdnn}, we can find that NestDNN achi
 
 
 \subsection{Review of One-shot Whole Network Compression}
+There are many constraints of mobile devices, such as computing power, battery capacity, and memory capacity. Yong-Deok Kim~\cite{kim2016compression} illustrates his method to solve this problem by presenting a new scheme for compressing convolutional neural networks (CNNs).
 
+For this topic, there is one main challenge in deploying CNNs on mobile devices: limited resources. Running some deeper CNNs, especially for complex tasks like ImageNet classification, is still hard to implement. In the existing paper written by Kim~\cite{kim2016compression}, there is a new method called “one-shot whole network compression” which is a simple and effective way to compress CNNs. This existing algorithm can be divided into three steps: rank selection with variational Bayesian matrix factorization (VBMF), Tucker decomposition on the kernel tensor, and fine-tuning to recover any loss in accuracy. Fig.~\ref{one-shot-steps} shows the scheme of these three steps of this algorithm.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1\textwidth]{./figure/one-shot-steps.png}
+	\caption{The scheme of one-show whole network compression, which includes three steps~\cite{kim2016compression}.}
+	\label{one-shot-steps}
+\end{figure}
+
+In Kim’s paper~\cite{kim2016compression}, rank selection with variational Bayesian matrix factorization (VBMF) aims to determine the rank of each layer in the neural network. By applying VBMF on each kernel tensor, it can find noisy variance, rank, and rank recovery easily in an automatic way. It makes good preconditions for Tucker decomposition. Tucker decomposition on the kernel tensor is used to compress both convolutional and fully-connected layers of the neural network. It preserves the essential features, meanwhile, compressing successfully. After doing the two steps, Kim’s algorithm applies find-tuning to recover the loss in accuracy. This process makes sure that the compressed model retains its performance and accuracy close to the uncompressed model.
+
+Since the simplicity, effectiveness, and it can compress the whole network, “One-shot Whole Network Compression” can be considered as a good algorithm. However, this algorithm has some potential limitations as well. According to the experiment in Kim’s paper, it is not fully investigated whether the rank selected is optimal or not. Moreover, it may affect the speed-up ratio since it lacks cache efficiency, in the $1 \times 1$ convolution.
 
 \subsection{Review of Frequency Regularization}
 
