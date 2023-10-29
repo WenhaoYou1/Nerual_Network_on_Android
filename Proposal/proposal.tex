@@ -96,10 +96,13 @@ In conclusion, this paper explores a simple, efficient, and creative method to r
 
 \section{Brief Summary of Existing Work}
 
-We cover the methods for implementing neural networks on the mobile over four sections. In Section~\ref{upgrade_hardware}, upgrading hardware on mobile devices and which parts are introduced. At the algorithm level, there is an algorithm called NestDNN~\cite{fang2018nestdnn} based on the dynamics or runtime resources to enable resource-aware multi-tenant on-device deep learning for mobile vision systems as shown in Section~\ref{nestdnn}. Moreover, there is an algorithm called “one-shot whole network compression”~\cite{kim2016compression} to compress convolutional neural networks (CNNs) for mobile deployment as shown in Section~\ref{oneshot}. There is also an algorithm named Frequency Regularization that helps compress the neural network by using the idea of reducing the redundancy information during the training process. The general steps are as shown and introduced in Section~\ref{fr}.
+We cover the methods for implementing neural networks on the mobile over five sections. In Section~\ref{upgrade_hardware}, upgrading hardware on mobile devices and which parts are introduced. At the algorithm level, there is method called Extreme Learning Machine (ELM)~\cite{akusok2019metal}, which assigns hidden layer weights randomly. Section~\ref{elm} shows the biref introduction of ELM. What's more, there is an algorithm called NestDNN~\cite{fang2018nestdnn} based on the dynamics or runtime resources to enable resource-aware multi-tenant on-device deep learning for mobile vision systems as shown in Section~\ref{nestdnn}. Moreover, there is an algorithm called “one-shot whole network compression”~\cite{kim2016compression} to compress convolutional neural networks (CNNs) for mobile deployment as shown in Section~\ref{oneshot}. There is also an algorithm named Frequency Regularization that helps compress the neural network by using the idea of reducing the redundancy information during the training process. The general steps are as shown and introduced in Section~\ref{fr}.
 
 \subsection{Upgrade Hardware}\label{upgrade_hardware}
 Hardware accelerators such as the digital signal processors offer solutions to overcome these challenges. Many manufacturers have already produced better hardware. For example, Apple presented the Metal Performance Shaders with the support of CNNs accelerated by GPU. This is a solution built on top of the Metal API and allows custom operations. Since there is an experiment~\cite{akusok2019metal} that confirmed the feasibility of Big Data analysis on modern mobile devices. Moreover, the hardware on Android devices is upgraded by four main companies, such as Qualcomm, HiSilicon, MediaTek, and Samsung~\cite{Andrey2019Aibenchmark}, which can work with neural networks as well.
+
+\subsection{Algorithm Extreme Learning Machine (ELM)}\label{elm}
+The Extreme Learning Machine (ELM) is able to allocate the weight of the hidden layers randomly.  And it can generate linear output layer as well. Compared with the traditional neural networks, ELM provides faster training speed and high efficiency. The main idea of ELM is to generate the random hidden nodes, in order to avoid backpropagation. Its advantages are the simplicity, the efficiency, and the fast training speed. However, the biggest disadvantage of ELM is the sensitivity to the number of hidden nodes. In the experiement~\cite{akusok2019metal}, ELM was proved to achieve the same performance with other deep learning models in many tasks. Moreover, ELM is easy to optimize since it has simple structure.
 
 \subsection{Algorithm NestDNN}\label{nestdnn}
 \begin{figure}[htbp]
@@ -109,27 +112,35 @@ Hardware accelerators such as the digital signal processors offer solutions to o
 	\label{nestdnn_arch}
 \end{figure}
 
-NestDNN is a framework that takes the dynamics of runtime resources into account to enable resource-aware multi-tenant on-device deep learning for mobile vision systems. NestDNN enables each deep learning model to offer flexible resource-accuracy trade-offs~\cite{fang2018nestdnn}. Fig.~\ref{nestdnn_arch} illustrates the architecture of NestDNN in detail, which is split into an offline stage and an online stage. The offline stage consists of three phases: model pruning, model recovery, and model profiling~\cite{fang2018nestdnn}. There are five models involved in NestDNN as shown below:
+NestDNN is a framework that takes the dynamics of runtime resources into account to enable resource-aware multi-tenant on-device deep learning for mobile vision systems. NestDNN enables each deep learning model to offer flexible resource-accuracy trade-offs~\cite{fang2018nestdnn}. Fig.~\ref{nestdnn_arch} illustrates the architecture of NestDNN in detail, which is split into an offline stage and an online stage. The offline stage consists of three phases: model pruning, model recovery, and model profiling~\cite{fang2018nestdnn}. Table~\ref{nest-table} illustrates the five models involved in NestDNN.
 
-\begin{itemize}\label{5involvenestdnn}
-	\item \textbf{Vanilla Model:} Off-the-shelf deep learning model (e.g., ResNet) trained on a given dataset (e.g., ImageNet).
-	
-	\item \textbf{Pruned Model:} Intermediate result obtained in model pruning stage.
-	
-	\item \textbf{Seed Model:} The smallest pruned model generated in model pruning which meets the minimum accuracy goal set by the user. It is also the starting point of model recovery stage.
-	
-	\item \textbf{Descendant Model:} A model grown upon the seed model in model recovery stage. It has a unique resource-accuracy trade-off.
-	
-	\item \textbf{Multi-Capacity Model:} The final descendant model that has the capacities of all the previously generated descendant models.
-	
-\end{itemize}
-
-
+\begin{table}[htbp]
+	\centering
+	\caption{Five terminologies involved in NestDNN.}
+	\label{nest-table}
+	\centering
+	\begin{tabular}{|p{3cm}|p{10cm}|}
+		\hline
+		\textbf{Terminology} & \textbf{Explaination} \\
+		\hline
+		Vanilla Model&A basic and unmodified deep learning model (e.g. ResNet trained on ImageNet)\\
+		\hline
+		Pruned Model&A model optimized by removing less significant filters.\\
+		\hline
+		Seed Model&The smallest model after pruning, serving as a starting point for further development.\\
+		\hline
+		Descendant Model&Models evolved from the seed model, each offering a unique resource-accuracy trade-off.\\
+		\hline
+		Multi-Capacity Model&The final model that encapsulates the capabilities of all previous models, providing multiple capacities within a single model.\\
+		\hline
+	\end{tabular} 
+	%}
+\end{table}	
 
 \subsection{Algorithm One-shot Whole Network Compression}\label{oneshot}
 ``One-shot Whole Network Compression" is a simple way to compress CNNs to make them more suitable for fast and low-power applications on the mobile. This algorithm can be divided into three steps: rank selection, tensor decomposition, and fine-tuning. Each step can be implemented easily by using public tools such as VBMF for rank selection, Tucker decomposition for tensor decomposition, and Caffe for fine-tuning~\cite{kim2016compression}.
 
-\subsection{Frequency Regularization}\label{fr}
+\subsection{Algorithm Frequency Regularization}\label{fr}
 The frequency regularization algorithm is divided into two steps, the dynamic tail-truncation and inverse discrete cosine transform (IDCT). The dynamic tail-truncation involves retaining parameters in the frequency domain when training the neural networks. The segments that depict high-frequency zigzag information are truncated. This procedure is executed using a dot product with a zigzag mask matrix to maintain differentiability ~\cite{zhao2023frequency}. After the procedure, the algorithm utilizes IDCT to rebuild the spatial tensors, which are subsequently employed as standard learning kernels in the networks.
 
 
