@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  29 OCT 2023 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.20)  29 OCT 2023 14:50
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **proposal.tex
 (./proposal.tex
@@ -895,7 +896,7 @@ lenges men-tioned above, NestDNN
 
 [7]
 
-LaTeX Warning: Reference `one-shot-steps' on page 8 undefined on input line 262
+LaTeX Warning: Reference `one-shot-steps' on page 8 undefined on input line 264
 .
 
 [8] (./proposal.bbl [9]) [10] (./proposal.aux)
@@ -907,7 +908,7 @@ Package rerunfilecheck Info: File `proposal.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  21266 strings out of 476025
- 397589 string characters out of 5790017
+ 397589 string characters out of 5790016
  1864388 words of memory out of 5000000
  41282 multiletter control sequences out of 15000+600000
  533140 words of font info for 68 fonts, out of 8000000 for 9000
@@ -917,10 +918,10 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (10 pages, 339797 bytes).
+Output written on proposal.pdf (10 pages, 340020 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
+ 246 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
  48 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
