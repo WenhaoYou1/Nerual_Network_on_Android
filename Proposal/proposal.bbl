@@ -46,6 +46,15 @@ Andrey Ignatov, Radu Timofte, William Chou, Ke~Wang, Max Wu, Tim Hartley, and
 \bibitem{pytorch_mobile}
 Pytorch mobile, 2023.
 
+\bibitem{picton1994neural}
+Phil Picton.
+\newblock {\em What is a Neural Network?}, pages 1--12.
+\newblock Macmillan Education UK, London, 1994.
+
+\bibitem{neill2020overview}
+James~O' Neill.
+\newblock An overview of neural network compression, 2020.
+
 \bibitem{cao2020edgecomputing}
 Keyan Cao, Yefan Liu, Gongjie Meng, and Qimeng Sun.
 \newblock An overview on edge computing research.
