@@ -46,4 +46,9 @@ Andrey Ignatov, Radu Timofte, William Chou, Ke~Wang, Max Wu, Tim Hartley, and
 \bibitem{pytorch_mobile}
 Pytorch mobile, 2023.
 
+\bibitem{cao2020edgecomputing}
+Keyan Cao, Yefan Liu, Gongjie Meng, and Qimeng Sun.
+\newblock An overview on edge computing research.
+\newblock {\em IEEE Access}, 8:85714--85728, 2020.
+
 \end{thebibliography}

@@ -183,8 +183,6 @@ In this paper, we will divide the project into five labs (milestones), which can
 
 
 \section{Literature Review}
-\subsection{Review of High-Performance ELM}
-
 
 \subsection{Review of AI Benchmark for Running Deep Neural Networks}
 Nowadays, with the rapid improvements in mobile devices, they have reached the levels that can only be achieved on the previous PCs. Although there are a lot of improvements, mobile devices can still not run all the artificial intelligence applications smoothly. In the existing paper~\cite{Andrey2019Aibenchmark}, Ignatov explores further the current state of deep learning within the Android system.
@@ -195,6 +193,12 @@ In this existing paper~\cite{Andrey2019Aibenchmark},  a fabless semiconductor co
 
 AI Benchmark is just a tool or test, which is used to measure and evaluate the performance of AL algorithms on Android devices. Most researchers use this tool to determine the efficiency of the up-to-date hardware, which is manufactured by the majority of big companies. 
 
+\subsection{Review of High-Performance Extreme Learning Machine (ELM)}
+The Extreme Learning Machine is a learning algorithm for single-hidden-layer feedforward neural networks, where the weights and biases of its hidden layer are generated randomly. The existing paper~\cite{akusok2019metal}, reveals that because of this feature, ELM usually has a faster speed than other traditional neural network learning algorithms. 
+
+Currently, ELM has become more and more important since the rise of edge computing. In Cao’s existing research~\cite{cao2020edgecomputing}, we can find that the traditional cloud computing is not the best way anymore because of large-scale data, slow response speed and poor security. Edge computing acts as an important role, in order to solving the increasing volume of data and processing demands. Since edge computing can operate in close proximity to data sources, it enables more efficient data processing. According to the characteristics of edge computing, it allows algorithms to run on mobile devices directly, providing a more convenient computing environment for users. Despite the plenty of advantages of edge computing, it still has some limitations for the implementation of high-quality Neural Network applications.
+
+Akusok and his teammates found a new ELM implementing method, which is tailored for mobile devices with GPU acceleration. Their method combines the speed of a direct non-iterative solver with minimal memory requirements, making it suitable for edge computing situations. By comparing the performance between two different types of devices, iPad Pro and PC, it shows a result that the GPU on the iPad performs way better than the CPU on the laptop, which trained a 19000 neuron model using less than one gigabyte of memory successfully. Because of Akusok’s experiment~\cite{akusok2019metal}, tells us the potential for running Neural Networks on limited mobile devices and it also highlights the significance of the ELM.
 
 \subsection{Review of NestDNN}
 Currently, more and more mobile devices, like smartphones, drones, and augmented reality headsets, are trying to change our daily lives, leading to the increasing demand for mobile devices. Since our researchers want to run the Neural Networks on our own mobile devices, we find that an algorithm called NestDNN may probably solve this problem. 
@@ -234,6 +238,18 @@ Since the simplicity, effectiveness, and it can compress the whole network, “O
 
 \subsection{Review of Frequency Regularization}
 
+Until now, many neural networks have been discovered or created by researchers and enhanced the features for model training. However, there exists a problem where the size of the neural networks is growing bigger. It can lead to concerns about information and storage overload because of the numerous numbers of parameters. If we want to implement the neural networks on limited hardware devices, applying some neural network compression algorithms is a method to fit the specifications. 
+
+In most neural network research, we deduce that the network performance is because of the parameters. For instance, if we implement image segmentation, high-frequency components are not as crucial for the task since they capture the details of the image which is not necessary for the segmentation. Therefore, applying the frequency domain transform is a practical method. Also, since the frequency domain transform converts the signals into numerical data, we can easily manipulate the quantitative image information for the compression algorithm. In frequency regularization, it focuses on implementing the transform to restrict the information redundancy. The reason is because of the interpretation of the complicated architectures of the networks. Frequency domain transforms for compressing networks may not work as expected on the pre-trained models~\cite{zhao2023frequency}. 
+
+When applying the neural network compression algorithms, we want to ensure the accuracy of the output compared with the original dataset. Although there may still exist some shortcomings of this algorithm, such as the total training time, we are still researching frequency regularization to be our target to implement neural network compression. The reason is because of the main following reasons: First, we can apply this algorithm to general neural network architectures. Second, it does not reduce the accuracy percentage. We will introduce them respectively. 
+
+We can achieve frequency regularization by two processes. The first one is the dynamic tail truncation, and the other is the inverse discrete cosine transform (IDCT). Fig.~\ref{idct} shows the frequency regularization process. 
+
+
+The dynamic tail truncation is used in this algorithm. From the research paper, the authors concluded that most parameters in convolutional networks can be eliminated. However, there exists an issue where the parameters that are not eliminated may affect the backpropagation. Therefore, the training loss may stay the same in many epochs. The strategy of dynamic tail truncation addresses this issue by continuously setting a few tail elements to 0 in every epoch but not directly setting most of them at once.
+
+The idea behind the frequency regularization is to maintain the tensors in the frequency domain instead of the spatial domain. By implementing this, it allows the tail elements to be eliminated by a dot product with the zigzag mask matrix. After the dynamic tail truncation mentioned above, the algorithm then inputs the tensors to the inverse discrete cosine transform. The purpose of the inverse discrete cosine transforms is not only the role of reconstructing the spatial tensors. An inverse discrete cosine transform process can be implemented for tensors with any form. It leads to an important functionality, for instance, applied to any tensors from neural networks. 
 
 
 
