@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  29 OCT 2023 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  29 OCT 2023 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -888,14 +888,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
                                                   \__shipout_drop_firstpage_...
 l.239 
       ]
-Overfull \hbox (5.47571pt too wide) in paragraph at lines 252--253
+Overfull \hbox (5.47571pt too wide) in paragraph at lines 254--255
 []\OT1/ptm/m/n/12 To ex-plain the de-tail of how NestDNN tack-les the two chal-
 lenges men-tioned above, NestDNN
  []
 
 [7]
 
-LaTeX Warning: Reference `one-shot-steps' on page 8 undefined on input line 260
+LaTeX Warning: Reference `one-shot-steps' on page 8 undefined on input line 262
 .
 
 [8] (./proposal.bbl [9]) [10] (./proposal.aux)
@@ -912,15 +912,15 @@ Here is how much of TeX's memory you used:
  41282 multiletter control sequences out of 15000+600000
  533140 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,80p,1440b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,80p,1440b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (10 pages, 339257 bytes).
+Output written on proposal.pdf (10 pages, 339797 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
+ 245 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
  48 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
