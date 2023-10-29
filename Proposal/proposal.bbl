@@ -46,6 +46,10 @@ Andrey Ignatov, Radu Timofte, William Chou, Ke~Wang, Max Wu, Tim Hartley, and
 \bibitem{pytorch_mobile}
 Pytorch mobile, 2023.
 
+\bibitem{utmel2020dsp}
+Utmel.
+\newblock An overview of digital signal processor, Jul 2020.
+
 \bibitem{picton1994neural}
 Phil Picton.
 \newblock {\em What is a Neural Network?}, pages 1--12.

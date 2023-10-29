@@ -10,45 +10,45 @@ I'm skipping whatever remains of this entry
 Warning--empty booktitle in fang2018nestdnn
 Warning--empty journal in kim2016compression
 Warning--empty journal in wang2018privacy
-You've used 12 entries,
+You've used 13 entries,
             1791 wiz_defined-function locations,
-            514 strings with 5892 characters,
-and the built_in function-call counts, 3371 in all, are:
-= -- 277
-> -- 181
+            520 strings with 6007 characters,
+and the built_in function-call counts, 3491 in all, are:
+= -- 285
+> -- 185
 < -- 6
-+ -- 64
-- -- 52
-* -- 215
-:= -- 509
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 11
++ -- 66
+- -- 53
+* -- 218
+:= -- 526
+add.period$ -- 38
+call.type$ -- 13
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 159
-empty$ -- 316
-format.name$ -- 52
-if$ -- 782
+cite$ -- 16
+duplicate$ -- 164
+empty$ -- 334
+format.name$ -- 53
+if$ -- 810
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 13
 missing$ -- 11
-newline$ -- 61
-num.names$ -- 15
-pop$ -- 63
+newline$ -- 65
+num.names$ -- 16
+pop$ -- 70
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 100
+skip$ -- 104
 stack$ -- 0
 substring$ -- 184
-swap$ -- 58
+swap$ -- 59
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 29
-width$ -- 14
-write$ -- 127
+while$ -- 30
+width$ -- 15
+write$ -- 135
 (There was 1 error message)

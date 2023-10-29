@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.20)  29 OCT 2023 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  29 OCT 2023 15:01
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **proposal.tex
 (./proposal.tex
@@ -873,44 +872,64 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.184 	
         <./figure/timeline.png>] [5]
-Underfull \hbox (badness 5091) in paragraph at lines 227--227
+<./figure/dsp-structure.png, id=159, 581.17125pt x 282.05376pt>
+File: ./figure/dsp-structure.png Graphic file (type png)
+<use ./figure/dsp-structure.png>
+Package pdftex.def Info: ./figure/dsp-structure.png  used on input line 208.
+(pdftex.def)             Requested size: 452.9679pt x 219.8375pt.
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.217 A
+       I Benchmark is just a tool or test, which is used to measure and eval...
+ <./figure/dsp-structure.png>]
+Underfull \hbox (badness 5091) in paragraph at lines 238--238
 []|\OT1/ptm/m/n/12 Knowledge Dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
 []|\OT1/ptm/m/n/12 Tensor De-com-
  []
 
-[6
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.239 
+l.254 
       ]
-Overfull \hbox (5.47571pt too wide) in paragraph at lines 254--255
+Overfull \hbox (5.47571pt too wide) in paragraph at lines 265--266
 []\OT1/ptm/m/n/12 To ex-plain the de-tail of how NestDNN tack-les the two chal-
 lenges men-tioned above, NestDNN
  []
 
-[7]
+<./figure/one-shot-steps.png, id=198, 575.14874pt x 204.765pt>
+File: ./figure/one-shot-steps.png Graphic file (type png)
+<use ./figure/one-shot-steps.png>
+Package pdftex.def Info: ./figure/one-shot-steps.png  used on input line 279.
+(pdftex.def)             Requested size: 452.9679pt x 161.27202pt.
 
-LaTeX Warning: Reference `one-shot-steps' on page 8 undefined on input line 264
-.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8] (./proposal.bbl [9]) [10] (./proposal.aux)
-
-LaTeX Warning: There were undefined references.
-
+[8] [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.297 
+       <./figure/one-shot-steps.png>] (./proposal.bbl [10]) [11]
+(./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 12EADE520E835EE56826CCA96EE625FE;4124.
  ) 
 Here is how much of TeX's memory you used:
- 21266 strings out of 476025
- 397589 string characters out of 5790016
+ 21286 strings out of 476025
+ 398073 string characters out of 5790017
  1864388 words of memory out of 5000000
- 41282 multiletter control sequences out of 15000+600000
+ 41296 multiletter control sequences out of 15000+600000
  533140 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,80p,1440b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -918,10 +937,10 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (10 pages, 340020 bytes).
+Output written on proposal.pdf (11 pages, 724958 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
