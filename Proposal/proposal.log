@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  29 OCT 2023 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  29 OCT 2023 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,7 +806,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
-<figure/idct.png, id=91, 307.1475pt x 208.78pt>
+<figure/idct.png, id=95, 307.1475pt x 208.78pt>
 File: figure/idct.png Graphic file (type png)
 <use figure/idct.png>
 Package pdftex.def Info: figure/idct.png  used on input line 72.
@@ -815,7 +815,7 @@ Package pdftex.def Info: figure/idct.png  used on input line 72.
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-Underfull \hbox (badness 3492) in paragraph at lines 86--88
+Underfull \hbox (badness 3492) in paragraph at lines 86--92
 \OT1/ptm/m/n/12 quency Reg-u-lar-iza-tion per-forms a bet-ter
  []
 
@@ -824,20 +824,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.106 
+l.102 
        <./figure/idct.png>]
-<figure/nestdnn_arch.png, id=126, 833.1125pt x 259.97125pt>
+<figure/nestdnn_arch.png, id=130, 833.1125pt x 259.97125pt>
 File: figure/nestdnn_arch.png Graphic file (type png)
 <use figure/nestdnn_arch.png>
-Package pdftex.def Info: figure/nestdnn_arch.png  used on input line 110.
+Package pdftex.def Info: figure/nestdnn_arch.png  used on input line 106.
 (pdftex.def)             Requested size: 452.9679pt x 141.35028pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
 []|\OT1/ptm/m/n/12 Descendant
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 []|\OT1/ptm/m/n/12 Multi-Capacity
  []
 
@@ -846,101 +846,119 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.145 
+l.141 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.145 
+l.141 
        <./figure/nestdnn_arch.png>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-52.
+48.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<./figure/timeline.png, id=143, 670.505pt x 176.66pt>
+<./figure/timeline.png, id=148, 670.505pt x 176.66pt>
 File: ./figure/timeline.png Graphic file (type png)
 <use ./figure/timeline.png>
-Package pdftex.def Info: ./figure/timeline.png  used on input line 172.
+Package pdftex.def Info: ./figure/timeline.png  used on input line 168.
 (pdftex.def)             Requested size: 452.9679pt x 119.34277pt.
  [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.184 	
-        <./figure/timeline.png>] [5]
-<./figure/dsp-structure.png, id=159, 581.17125pt x 282.05376pt>
+l.180 	
+        <./figure/timeline.png>]
+<./figure/dsp-image.png, id=159, 388.45125pt x 201.75375pt>
+File: ./figure/dsp-image.png Graphic file (type png)
+<use ./figure/dsp-image.png>
+Package pdftex.def Info: ./figure/dsp-image.png  used on input line 204.
+(pdftex.def)             Requested size: 203.83417pt x 105.86996pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--206
+[]\OT1/ptm/m/n/12 Figure 4: []Digital sig-nal pro-ces-sor
+ []
+
+<./figure/dsp-structure.png, id=163, 581.17125pt x 282.05376pt>
 File: ./figure/dsp-structure.png Graphic file (type png)
 <use ./figure/dsp-structure.png>
-Package pdftex.def Info: ./figure/dsp-structure.png  used on input line 208.
-(pdftex.def)             Requested size: 452.9679pt x 219.8375pt.
- [6
+Package pdftex.def Info: ./figure/dsp-structure.png  used on input line 215.
+(pdftex.def)             Requested size: 407.66833pt x 197.85374pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.217 A
-       I Benchmark is just a tool or test, which is used to measure and eval...
- <./figure/dsp-structure.png>]
-Underfull \hbox (badness 5091) in paragraph at lines 238--238
+l.223 
+       <./figure/dsp-image.png>]
+Underfull \hbox (badness 5091) in paragraph at lines 247--247
 []|\OT1/ptm/m/n/12 Knowledge Dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--240
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
 []|\OT1/ptm/m/n/12 Tensor De-com-
  []
 
-[7
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.258 
+       <./figure/dsp-structure.png>] [7
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.254 
+l.274 
       ]
-Overfull \hbox (5.47571pt too wide) in paragraph at lines 265--266
+Overfull \hbox (5.47571pt too wide) in paragraph at lines 277--278
 []\OT1/ptm/m/n/12 To ex-plain the de-tail of how NestDNN tack-les the two chal-
 lenges men-tioned above, NestDNN
  []
 
-<./figure/one-shot-steps.png, id=198, 575.14874pt x 204.765pt>
+<./figure/one-shot-steps.png, id=219, 575.14874pt x 204.765pt>
 File: ./figure/one-shot-steps.png Graphic file (type png)
 <use ./figure/one-shot-steps.png>
-Package pdftex.def Info: ./figure/one-shot-steps.png  used on input line 279.
+Package pdftex.def Info: ./figure/one-shot-steps.png  used on input line 291.
 (pdftex.def)             Requested size: 452.9679pt x 161.27202pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8] [9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.297 
+l.312 
        <./figure/one-shot-steps.png>] (./proposal.bbl [10]) [11]
 (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 12EADE520E835EE56826CCA96EE625FE;4124.
+(rerunfilecheck)             Checksum: A5597735109DDEC9E5CD9638E01825F1;4467.
  ) 
 Here is how much of TeX's memory you used:
- 21286 strings out of 476025
- 398073 string characters out of 5790017
+ 21303 strings out of 476025
+ 398433 string characters out of 5790017
  1864388 words of memory out of 5000000
- 41296 multiletter control sequences out of 15000+600000
+ 41307 multiletter control sequences out of 15000+600000
  533140 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,80p,1440b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,80p,1473b,553s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (11 pages, 724958 bytes).
+Output written on proposal.pdf (11 pages, 1401363 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 287 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 

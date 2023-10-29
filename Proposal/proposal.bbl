@@ -44,7 +44,9 @@ Andrey Ignatov, Radu Timofte, William Chou, Ke~Wang, Max Wu, Tim Hartley, and
   International Publishing.
 
 \bibitem{pytorch_mobile}
-Pytorch mobile, 2023.
+Pytorch mobile: End-to-end workflow from training to deployment for ios and
+  android mobile devices, 2023.
+\newblock Accessed: 2023-10-15.
 
 \bibitem{utmel2020dsp}
 Utmel.
@@ -59,12 +61,27 @@ Phil Picton.
 James~O' Neill.
 \newblock An overview of neural network compression, 2020.
 
+\bibitem{cheng2020survey}
+Yu~Cheng, Duo Wang, Pan Zhou, and Tao Zhang.
+\newblock A survey of model compression and acceleration for deep neural
+  networks, 2020.
+
+\bibitem{pal2020autoencoding}
+Safalya Pal.
+\newblock Auto-encoding for shared cross domain feature representation and
+  image-to-image translation, 2020.
+
+\bibitem{gol2021control}
+Ebru~Aydin Gol.
+\newblock Control synthesis for parametric timed automata under unavoidability
+  specifications, 2021.
+
 \bibitem{cao2020edgecomputing}
 Keyan Cao, Yefan Liu, Gongjie Meng, and Qimeng Sun.
 \newblock An overview on edge computing research.
 \newblock {\em IEEE Access}, 8:85714--85728, 2020.
 
-\bibitem{6908370}
+\bibitem{jin2014implement}
 Jonghoon Jin, Vinayak Gokhale, Aysegul Dundar, Bharadwaj Krishnamurthy, Berin
   Martini, and Eugenio Culurciello.
 \newblock An efficient implementation of deep convolutional neural networks on

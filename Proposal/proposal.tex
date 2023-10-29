@@ -85,14 +85,10 @@ The known shortcoming of this algorithm is the training speed compared to other 
 
 From the above paper mentioned, Frequency Regularization performs a better compression and works on most general neural networks ~\cite{zhao2023frequency}. Combining the best of our knowledge, we believe this research contributes as the first implementation of applying Frequency Regularization to neural networks but on limited hardware devices, specifically, mobile devices.
 % end check
-
 % we need to find the short come of this algorithm
 % we need to provide a reference about enhancing privacy
 % main contribution 
-
-
 In conclusion, this paper explores a simple, efficient, and creative method to run a large neural network on mobile devices based on the Frequency regularization algorithm. Our purpose is not only to accomplish this implementation, we want to ensure the performance is similar to the result running on high-specification hardware such as computers. We hope to provide a fast and secure neural network application experience on mobile devices.
-
 
 \section{Brief Summary of Existing Work}
 
@@ -161,11 +157,11 @@ There are five sub-topics for implementing Frequency Regularization on Android d
 	
 \end{itemize}
 
-\section{How You Plan to Implement Your Ideas}
+\section{How You Plan to Implement Your Ideas (Timeline)}
 
 For the class 414, we will only focus on the Frequency Regularization (FR). The basic idea is to analyze the existed paper in Basu's lab~\cite{zhao2023frequency}. After that, we also need to explore the basic structure of the PyTorch Mobile~\cite{pytorch_mobile}.
 
-Below figure shows the timeline that we are planning for the implementation. 
+Fig.~\ref{timeline_fig} shows the timeline that we are planning for the implementation. 
 % \section*{Timeline for FR implemented on Mobile Device (Class 414)}
 \begin{figure}[!h]
 \centering
@@ -175,7 +171,7 @@ Below figure shows the timeline that we are planning for the implementation.
 \end{figure}
 
 
-\section{Short Description of 5 LABS}
+\section{Short Description of 5 LABS (Milestones)}
 
 In this paper, we will divide the project into five labs (milestones), which can help us to double check our progress and adjust it timely.
 
@@ -192,20 +188,31 @@ In this paper, we will divide the project into five labs (milestones), which can
 	
 \end{itemize}
 
-\pagebreak
+% \pagebreak
 
 \section{Literature Review}
 
 \subsection{Review of AI Benchmark for Running Deep Neural Networks}
 Nowadays, with the rapid improvements in mobile devices, they have reached the levels that can only be achieved on the previous PCs. Although there are a lot of improvements, mobile devices can still not run all the artificial intelligence applications smoothly. In the existing paper~\cite{Andrey2019Aibenchmark}, Ignatov explores further the current state of deep learning within the Android system.
 
-In the early 1980s, digital signal processors (DSPs) started to appear in people’s view. Some people may confused what is DSPs. Digital Signal Processors (DSPs) are designed microprocessors for efficiently implementing digital signal processing algorithms~\cite{utmel2020dsp}. DSPs can possess a specialized hardware architecture easily. What's more, they can also handle the instruction set optimized for processing digital signals, which is considered the primary functionality. Usually, we use DSPs for processing audio, video, temperature, and the majority of types of signals. It is good for catching real-time signals and analyzing them at the same time. Nowadays, DSPs have more broad applications, such as digital TVs, radar, sonar systems, and more. To understand how DSP works, we need to figure it out the internal structure of DSP. 
+In the early 1980s, digital signal processors (DSPs) started to appear in people’s view. Fig~\ref{dsp-image} shows us the image of DSP. Some people may confused what is DSPs. Digital Signal Processors (DSPs) are designed microprocessors for efficiently implementing digital signal processing algorithms~\cite{utmel2020dsp}. DSPs can possess a specialized hardware architecture easily. What's more, they can also handle the instruction set optimized for processing digital signals, which is considered the primary functionality. Usually, we use DSPs for processing audio, video, temperature, and the majority of types of signals. It is good for catching real-time signals and analyzing them at the same time. Nowadays, DSPs have more broad applications, such as digital TVs, radar, sonar systems, and more. To understand how DSP works, we need to figure it out the internal structure of DSP. 
+
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+	\vspace{-15pt}    % 对应高度
+	
+	\includegraphics[width=0.45\textwidth]{./figure/dsp-image.png}\\
+	\vspace{-15pt}    % 对应高度2
+	\caption{Digital signal processor (DSP)~\cite{utmel2020dsp}.}
+	\label{dsp-image}
+	\vspace{-15pt}    % 对应高度3
+\end{wrapfigure}
 
 Fig.~\ref{dsp-structure} illustrates the internal structure of DSP, which involved in four main components: program memory, data storage, calculation engine, and input/output. Program memory stores the program, processing the data. Data storage takes charge for storing the information, which are waited to be handled. Calculation engine, like its name, is related to the calculation, which used for perfroming some mathematical processing. And the input/output will provide a series of functions, making a bridge with the outside hardware components.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=1\textwidth]{./figure/dsp-structure.png}
+	\includegraphics[width=0.9\textwidth]{./figure/dsp-structure.png}
 	\caption{DSP internal structure~\cite{utmel2020dsp}.}
 	\label{dsp-structure}
 \end{figure}
@@ -216,15 +223,17 @@ In this existing paper~\cite{Andrey2019Aibenchmark},  a fabless semiconductor co
 
 AI Benchmark is just a tool or test, which is used to measure and evaluate the performance of AL algorithms on Android devices. Most researchers use this tool to determine the efficiency of the up-to-date hardware, which is manufactured by the majority of big companies. 
 
-\subsection{Review of Neural Network Compression}
+\subsection{Review of Neural Network}
 
 In order to learn how the four algorithms, ELM~\cite{akusok2019metal}, NestDNN~\cite{fang2018nestdnn}, “One-show Whole Network Compression”~\cite{kim2016compression}, and Frequency Regulation~\cite{zhao2023frequency} work, we have to figure out what is Neural Network. A Neural Network is a computational model, including many interconnected elements, which are inspired by the biological nervous system~\cite{picton1994neural}. The network usually has three layers: input, hidden and output layers. In a nutshell, it is an attempt to make machines simulate the way the human brain works. For the learning process of Neural Networks, the first process is always called backpropagation, adjusting the weights of the connections based on the data the model trained on. During its training process, the network just feeds data to the input layers and computes an output. Then compare the output with the expected one, adjusting the weights of the connections to minimize the possible errors.
 
-With the increasing size of the neural network and the increasing amount of its complexity, it is quite difficult to deploy the neural network on devices, especially mobile devices with limited resources. In order to solve this problem, neural network compression was born at the right moment. The general goal of compression is to make the networks more efficient and faster. In the existing paper~\cite{neill2020overview} of the compression, we can find the common ways for compressing networks in Table~\ref{neuralcompress-table}. In our words, we can always consider the compression as a process, which converts a large and complex book to a simple and summary abstract. Moreover, the process should also retain the main content and information.
+\subsection{Review of Compression of Neural Network}
+
+With the increasing size of the neural network and the increasing amount of its complexity, it is quite difficult to deploy the neural network on devices, especially mobile devices with limited resources. In order to solve this problem, neural network compression was born at the right moment. The general goal of compression is to make the networks more efficient and faster. In the existing paper~\cite{neill2020overview} of the compression, we can find the common ways for compressing networks in Table~\ref{neuralcompress-table}. 
 
 \begin{table}[htbp]
 	\centering
-	\caption{Four techniques involved in Neural Network Compression.}
+	\caption{Four techniques involved in Neural Network Compression~\cite{neill2020overview}.}
 	\label{neuralcompress-table}
 	\centering
 	\begin{tabular}{|p{3cm}|p{10cm}|}
@@ -243,7 +252,11 @@ With the increasing size of the neural network and the increasing amount of its 
 	%}
 \end{table}
 
+To understand further about compressing neural networks without losing too much accuracy and performance, we found four existing papers about pruning~\cite{cheng2020survey}, quantization~\cite{pal2020autoencoding}, knowledge distillation~\cite{gol2021control}, and tensor decomposition~\cite{pal2020autoencoding} respectively, which are related to Table~\ref{neuralcompress-table}. 
 
+For the creative pruning step~\cite{cheng2020survey}, it enhances its compressing networks by leveraging differentiability during the backpropagation stage. It not only allows for end-to-end learning but also shortens the training time significantly. The creative quantization step, manages the distribution of network weights, minimizing the quantization errors. Thus, it achieves a more efficient compression model. For knowledge distillation, this idea is usually used to design effective Convolutional Neural Networks (CNNs) under resource-limited environments. For the tensor decomposition, it unveils the latent relations among complex structures in the neural networks, providing a pathway toward optimization. Thus, it makes sure it the holistic and effective.
+
+In our words, we can always consider the compression as a process, which converts a large and complex book to a simple and summary abstract. Moreover, the process should also retain the main content and information.
 
 \subsection{Review of High-Performance Extreme Learning Machine (ELM)}
 The Extreme Learning Machine is a learning algorithm for single-hidden-layer feedforward neural networks, where the weights and biases of its hidden layer are generated randomly. The existing paper~\cite{akusok2019metal}, reveals that because of this feature, ELM usually has a faster speed than other traditional neural network learning algorithms. 
@@ -258,7 +271,6 @@ ELM also has some limitations. As the existing paper~\cite{akusok2019metal} ment
 Currently, more and more mobile devices, like smartphones, drones, and augmented reality headsets, are trying to change our daily lives, leading to the increasing demand for mobile devices. Since our researchers want to run the Neural Networks on our own mobile devices, we find that an algorithm called NestDNN may probably solve this problem. 
 
 For this topic, there are two main challenges that need to be solved: Multi-tenant Characteristics and Context Changes in Mobile Settings. Mobile devices often run multiple applications at the same time, and their resource availability can fluctuate because of various factors such as launching new applications or changing application priorities. This is also the main reason our own mobile devices can not support large Neural Networks since they do not have enough memory space. Here is a new algorithm NestDNN which is designed to address the dynamic nature of runtime resources in mobile vision systems. The main purpose of this is to enable resource-aware multi-tenant on-device deep learning, allowing each deep learning model to provide flexible resource-accuracy trade-offs. Through this idea, it can always select the optimal resource-accuracy trade-off for each model dynamically, making sure to utilize all the existing memories effectively and maximizing the performance of the implementation.
-
 
 Fig.~\ref{nestdnn} illustrates the architecture of NestDNN, which is divided into an offline stage and an online stage. The existing paper~\cite{fang2018nestdnn} about NestDNN discussed a new model pruning and recovery scheme inside the offline stage to achieve deployment of Neural Networks on mobiles. 
 
@@ -286,7 +298,6 @@ In Kim’s paper~\cite{kim2016compression}, rank selection with variational Baye
 Since the simplicity, effectiveness, and it can compress the whole network, “One-shot Whole Network Compression” can be considered as a good algorithm. However, this algorithm has some potential limitations as well. According to the experiment in Kim’s paper, it is not fully investigated whether the rank selected is optimal or not. Moreover, it may affect the speed-up ratio since it lacks cache efficiency, in the $1 \times 1$ convolution.
 
 \subsection{Review of Frequency Regularization}
-
 Until now, many neural networks have been discovered or created by researchers and enhanced the features for model training. However, there exists a problem where the size of the neural networks is growing bigger. It can lead to concerns about information and storage overload because of the numerous numbers of parameters. If we want to implement the neural networks on limited hardware devices, applying some neural network compression algorithms is a method to fit the specifications. 
 
 In most neural network research, we deduce that the network performance is because of the parameters. For instance, if we implement image segmentation, high-frequency components are not as crucial for the task since they capture the details of the image which is not necessary for the segmentation. Therefore, applying the frequency domain transform is a practical method. Also, since the frequency domain transform converts the signals into numerical data, we can easily manipulate the quantitative image information for the compression algorithm. In frequency regularization, it focuses on implementing the transform to restrict the information redundancy. The reason is because of the interpretation of the complicated architectures of the networks. Frequency domain transforms for compressing networks may not work as expected on the pre-trained models~\cite{zhao2023frequency}. 
@@ -294,7 +305,6 @@ In most neural network research, we deduce that the network performance is becau
 When applying the neural network compression algorithms, we want to ensure the accuracy of the output compared with the original dataset. Although there may still exist some shortcomings of this algorithm, such as the total training time, we are still researching frequency regularization to be our target to implement neural network compression. The reason is because of the main following reasons: First, we can apply this algorithm to general neural network architectures. Second, it does not reduce the accuracy percentage. We will introduce them respectively. 
 
 We can achieve frequency regularization by two processes. The first one is the dynamic tail truncation, and the other is the inverse discrete cosine transform (IDCT). Fig.~\ref{idct} shows the frequency regularization process. 
-
 
 The dynamic tail truncation is used in this algorithm. From the research paper, the authors concluded that most parameters in convolutional networks can be eliminated. However, there exists an issue where the parameters that are not eliminated may affect the backpropagation. Therefore, the training loss may stay the same in many epochs. The strategy of dynamic tail truncation addresses this issue by continuously setting a few tail elements to 0 in every epoch but not directly setting most of them at once.
 
@@ -304,7 +314,7 @@ The idea behind the frequency regularization is to maintain the tensors in the f
 
 Nowadays, mobile devices have more and more powerful hardware so that any neural network with fewer parameters can run. For instance, the Android library mentioned the pre-trained models are implementable, and we have successfully implemented them. However, in our project, we are trying to implement more advanced neural networks which may have more parameters involved. We also target to successfully apply the frequency regularization to the neural networks and implement the neural network on the mobile devices. In the following instances, some researchers successfully implemented the neural network on mobile devices. 
 
-In Jin's paper, they implement deep convolutional neural networks on a mobile coprocessor by executing an efficient routing strategy. It is to maximize the utilization of available hardware resources. Moreover, the performance is maintained to a high standard in real-world applications. The implementation is an example of a successful case to run a neural network on mobile devices by the hardware accelerator. As mentioned in previous sections, although the processor of mobile devices has dramatically increased over decades, the real-time performance is still inferior to computers. A simple explanation of the preparation for the hardware implementation in Jin's research is to apply a memory router on their hardware compromisation. The purpose of memory routers is to process all incoming and outgoing data streams. It can also distinguish works from one or more collections. When running the algorithm, the software compiler will allocate the hardware resources to the router for processing jobs. One of the main reasons for implementing a memory router is to make the implementation more efficient. The paper states that the efficient design of the memory routing can allow the maximum utilization that leads to the result in peak performance. The idea behind the implementation is to target the efficiency and scalability of mobile platforms for deep convolutional neural network~\cite{6908370}.
+In Jin's paper~\cite{jin2014implement}, they implement deep convolutional neural networks on a mobile coprocessor by executing an efficient routing strategy. It is to maximize the utilization of available hardware resources. Moreover, the performance is maintained to a high standard in real-world applications. The implementation is an example of a successful case to run a neural network on mobile devices by the hardware accelerator. As mentioned in previous sections, although the processor of mobile devices has dramatically increased over decades, the real-time performance is still inferior to computers. A simple explanation of the preparation for the hardware implementation in Jin's research is to apply a memory router on their hardware compromisation. The purpose of memory routers is to process all incoming and outgoing data streams. It can also distinguish works from one or more collections. When running the algorithm, the software compiler will allocate the hardware resources to the router for processing jobs. One of the main reasons for implementing a memory router is to make the implementation more efficient. The paper states that the efficient design of the memory routing can allow the maximum utilization that leads to the result in peak performance. The idea behind the implementation is to target the efficiency and scalability of mobile platforms for deep convolutional neural network~\cite{jin2014implement}.
 
 In Castanyer's paper, they try to identify the most challenging part when deploying deep learning-based software in mobile applications. It includes what are the challenges that we may encounter during the implementation of the neural network on mobile devices and how we can control the complexity while maintaining a high amount of accuracy. The researchers used PyTorch and the Android framework to design some studies and set goals to diagnose the challenges. After some experiments, they discovered a few categories that needed to be considered. The first category is the challenge that is verified to be real and concerning. It includes software-data dependency, sustainability, and frameworks in the early stages. The second category is the challenge that has been identified but is not faced in the study. It includes explainability. The last category is the newly defined challenges based on their experiment studies. The researchers mainly focus on fixing the first category by applying the data augmentation technique to reduce the data-software dependency and increase the sustainability of the applications~\cite{cast2020integration}.
 
