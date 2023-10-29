@@ -219,14 +219,7 @@ For this topic, there are two main challenges that need to be solved: Multi-tena
 
 Fig.~\ref{nestdnn} illustrates the architecture of NestDNN, which is divided into an offline stage and an online stage. The existing paper~\cite{fang2018nestdnn} about NestDNN discussed a new model pruning and recovery scheme inside the offline stage to achieve deployment of Neural Networks on mobiles. 
 
-To explain the detail of how NestDNN tackles the two challenges mentioned above, NestDNN utilizes a state-of-the-art \textit{Triplet Response Residual} (TRR) approach to rank the filters in a basic and unmodified deep learning model, such as Vanilla Model~\ref{5involvenestdnn}. In the existing paper~\cite{fang2018nestdnn}, here is the mathematical equation of TRR below. In order to solve context changes in mobile settings, NestDNN also explores an easy model freezing and filter growing, in order to generate the multi-capacity model in an iterative manner.	
-
-\begin{equation}
-TRR_i = \left\| F_i(\text{anc}) - F_i(\text{neg}) \right\|_2^2 - \left\| F_i(\text{anc}) - F_i(\text{pos}) \right\|_2^2
-\end{equation}
-where:\\
-F denotes the generated feature map;\\
-Anc, pos,  neg denotes a triplet includes an anchor image, a positive image, and a negative image respectively.\\
+To explain the detail of how NestDNN tackles the two challenges mentioned above, NestDNN utilizes a state-of-the-art \textit{Triplet Response Residual} (TRR) approach to rank the filters in a basic and unmodified deep learning model, such as Vanilla Model in Table~\ref{nest-table}. In the existing paper~\cite{fang2018nestdnn}, in order to solve context changes in mobile settings, NestDNN also explores an easy model freezing and filter growing, in order to generate the multi-capacity model in an iterative manner.	
 
 In the existing experiment~\cite{fang2018nestdnn}, we can find that NestDNN achieves up to a 4.2\% increase in inference accuracy, doubles the video frame processing rate, and reduces energy consumption by 1.7 times. Because of this experimental result, NestDNN is indeed a useful and easy method for deploying deep learning on mobile devices.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  28 OCT 2023 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.10)  28 OCT 2023 23:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,58 +872,45 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.184 	
         <./figure/timeline.png>] [5]
-
-LaTeX Warning: Reference `5involvenestdnn' on page 6 undefined on input line 22
-2.
-
-
 Overfull \hbox (5.47571pt too wide) in paragraph at lines 222--223
 []\OT1/ptm/m/n/12 To ex-plain the de-tail of how NestDNN tack-les the two chal-
 lenges men-tioned above, NestDNN
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--230
-
- []
-
-[6]
-<./figure/one-shot-steps.png, id=169, 575.14874pt x 204.765pt>
+<./figure/one-shot-steps.png, id=162, 575.14874pt x 204.765pt>
 File: ./figure/one-shot-steps.png Graphic file (type png)
 <use ./figure/one-shot-steps.png>
-Package pdftex.def Info: ./figure/one-shot-steps.png  used on input line 241.
+Package pdftex.def Info: ./figure/one-shot-steps.png  used on input line 234.
 (pdftex.def)             Requested size: 452.9679pt x 161.27202pt.
- [7
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6] [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.256 W
-       hen applying the neural network compression algorithms, we want to en...
- <./figure/one-shot-steps.png>] (./proposal.bbl) [8] (./proposal.aux)
-
-LaTeX Warning: There were undefined references.
-
+l.252 
+       <./figure/one-shot-steps.png>] (./proposal.bbl) [8] (./proposal.aux)
 Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 6B43861021A8EB0083B520C4D92E8D78;3591.
  ) 
 Here is how much of TeX's memory you used:
- 21263 strings out of 476025
- 397606 string characters out of 5790017
+ 21256 strings out of 476025
+ 397543 string characters out of 5790017
  1864388 words of memory out of 5000000
- 41281 multiletter control sequences out of 15000+600000
- 534995 words of font info for 73 fonts, out of 8000000 for 9000
+ 41279 multiletter control sequences out of 15000+600000
+ 533140 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,80p,1144b,505s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local
-/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2
-023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (8 pages, 552260 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
+al/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
+/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proposal.pdf (8 pages, 542366 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
