@@ -81,6 +81,13 @@ Keyan Cao, Yefan Liu, Gongjie Meng, and Qimeng Sun.
 \newblock An overview on edge computing research.
 \newblock {\em IEEE Access}, 8:85714--85728, 2020.
 
+\bibitem{NEURIPS2018}
+Zhenhua Liu, Jizheng Xu, Xiulian Peng, and Ruiqin Xiong.
+\newblock Frequency-domain dynamic pruning for convolutional neural networks.
+\newblock In S.~Bengio, H.~Wallach, H.~Larochelle, K.~Grauman, N.~Cesa-Bianchi,
+  and R.~Garnett, editors, {\em Advances in Neural Information Processing
+  Systems}, volume~31. Curran Associates, Inc., 2018.
+
 \bibitem{jin2014implement}
 Jonghoon Jin, Vinayak Gokhale, Aysegul Dundar, Bharadwaj Krishnamurthy, Berin
   Martini, and Eugenio Culurciello.
