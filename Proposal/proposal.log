@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.18)  29 OCT 2023 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.18)  29 OCT 2023 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,7 +940,7 @@ lenges men-tioned above, NestDNN
 LaTeX Warning: Reference `one-shot-steps' on page 9 undefined on input line 310
 .
 
-[9] [10] (proposal.bbl) [11] (proposal.aux)
+[9] [10] [11] (proposal.bbl) [12] (proposal.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
@@ -953,8 +953,8 @@ Package rerunfilecheck Info: File `proposal.out' has not changed.
 (rerunfilecheck)             Checksum: A5597735109DDEC9E5CD9638E01825F1;4467.
  ) 
 Here is how much of TeX's memory you used:
- 21493 strings out of 474824
- 400088 string characters out of 5750976
+ 21494 strings out of 474824
+ 400095 string characters out of 5750976
  1935043 words of memory out of 5000000
  42997 multiletter control sequences out of 15000+600000
  578922 words of font info for 72 fonts, out of 8000000 for 9000
@@ -965,9 +965,9 @@ cmsy10.pfb><C:/Users/btxcy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmb8a.pfb><C:/Users/btxcy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmr8a.pfb><C:/Users/btxcy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on proposal.pdf (11 pages, 375220 bytes).
+Output written on proposal.pdf (12 pages, 376331 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
