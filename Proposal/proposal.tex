@@ -190,7 +190,7 @@ In this paper, we will divide the project into five labs (milestones), which can
 	
 \end{itemize}
 
-\pagebreak
+% \pagebreak
 
 \section{Literature Review}
 
@@ -200,24 +200,24 @@ Nowadays, with the rapid improvements in mobile devices, they have reached the l
 In the early 1980s, digital signal processors (DSPs) started to appear in people’s view. Fig~\ref{dsp-image} shows us the image of DSP. Some people may confused what is DSPs. Digital Signal Processors (DSPs) are designed microprocessors for efficiently implementing digital signal processing algorithms~\cite{utmel2020dsp}. DSPs can possess a specialized hardware architecture easily. What's more, they can also handle the instruction set optimized for processing digital signals, which is considered the primary functionality. Usually, we use DSPs for processing audio, video, temperature, and the majority of types of signals. It is good for catching real-time signals and analyzing them at the same time. Nowadays, DSPs have more broad applications, such as digital TVs, radar, sonar systems, and more. To understand how DSP works, we need to figure it out the internal structure of DSP. 
 
 
-%\begin{wrapfigure}{l}{0.45\textwidth}
-%	\vspace{-15pt}    % 对应高度
+\begin{wrapfigure}{l}{0.45\textwidth}
+	\vspace{-15pt}    % 对应高度
 	
-%	\includegraphics[width=0.45\textwidth]{./figure/dsp-image.png}\\
-%	\vspace{-15pt}    % 对应高度2
-%	\caption{Digital signal processor (DSP)~\cite{utmel2020dsp}.}
-%	\label{dsp-image}
-%	\vspace{-15pt}    % 对应高度3
-%\end{wrapfigure}
+	\includegraphics[width=0.45\textwidth]{./figure/dsp-image.png}\\
+	\vspace{-15pt}    % 对应高度2
+	\caption{Digital signal processor (DSP)~\cite{utmel2020dsp}.}
+	\label{dsp-image}
+	\vspace{-15pt}    % 对应高度3
+\end{wrapfigure}
 
 Fig.~\ref{dsp-structure} illustrates the internal structure of DSP, which involved in four main components: program memory, data storage, calculation engine, and input/output. Program memory stores the program, processing the data. Data storage takes charge for storing the information, which are waited to be handled. Calculation engine, like its name, is related to the calculation, which used for perfroming some mathematical processing. And the input/output will provide a series of functions, making a bridge with the outside hardware components.
 
-%\begin{figure}[!h]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{./figure/dsp-structure.png}
-%	\caption{DSP internal structure~\cite{utmel2020dsp}.}
-%	\label{dsp-structure}
-%\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./figure/dsp-structure.png}
+	\caption{DSP internal structure~\cite{utmel2020dsp}.}
+	\label{dsp-structure}
+\end{figure}
 
 DSPs started to appear in mobile devices (i.e. mobile phones) in the 1990s, working for voice coding and compression for the first time. The power of DSPs increased significantly as time went on. For now, the powerful DSPs can easily used for some AI and deep learning applications, such as image classifiers, facial recognition, and image style transfer. But there are still some large and complex Neural Networks such as BigGAN and StyleGAN.
 
@@ -230,59 +230,36 @@ AI Benchmark is just a tool or test, which is used to measure and evaluate the p
 In order to learn how the four algorithms, ELM~\cite{akusok2019metal}, NestDNN~\cite{fang2018nestdnn}, “One-show Whole Network Compression”~\cite{kim2016compression}, and Frequency Regulation~\cite{zhao2023frequency} work, we have to figure out what is Neural Network. A Neural Network is a computational model, including many interconnected elements, which are inspired by the biological nervous system~\cite{picton1994neural}. The network usually has three layers: input, hidden and output layers. In a nutshell, it is an attempt to make machines simulate the way the human brain works. For the learning process of Neural Networks, the first process is always called backpropagation, adjusting the weights of the connections based on the data the model trained on. During its training process, the network just feeds data to the input layers and computes an output. Then compare the output with the expected one, adjusting the weights of the connections to minimize the possible errors.
 
 \subsection{Review of Compression of Neural Network}
+With the increasing size of the neural network and the increasing amount of its complexity, it is quite difficult to deploy the neural network on devices, especially mobile devices with limited resources. In order to solve this problem, neural network compression was born at the right moment. The general goal of compression is to make the neural networks become smaller and compact but still maintain the general accuracy simultaneously. In the existing paper~\cite{neill2020overview} of the compression, we can find the common ways for compressing networks below.
 
-With the increasing size of the neural network and the increasing amount of its complexity, it is quite difficult to deploy the neural network on devices, especially mobile devices with limited resources. In order to solve this problem, neural network compression was born at the right moment. The general goal of compression is to make the neural networks to become smaller and compact but still maintain the general accuracy simultaneously. In the existing paper~\cite{neill2020overview} of the compression, we can find the common ways for compressing networks in Table~\ref{neuralcompress-table}. 
+To understand further about compressing neural networks without losing too much accuracy and performance, we found four existing techniques. Those techniques are pruning~\cite{han2015learning}, quantization~\cite{han2016deep}, knowledge distillation~\cite{liu2019improving}, and tensor decomposition~\cite{ye2018learning} respectively.
 
-%\begin{table}[htbp]
-%	\centering
-%	\caption{Four techniques involved in Neural Network Compression~\cite{neill2020overview}.}
-%	\label{neuralcompress-table}
-%	\centering
-%	\begin{tabular}{|p{3cm}|p{10cm}|}
-%		\hline
-%		\textbf{Techniques} & \textbf{Explaination} \\
-%		\hline
-%		Pruning&Removing unnecessary neurons or connections.\\
-%		\hline
-%		Quantization&Reducing the precision of weights.\\
-%		\hline
-%		Knowledge Distillation&Transferring knowledge from a large model to a small one.\\
-%		\hline
-%		Tensor Decomposition&Breaking down tensors into simple forms.\\
-%		\hline
-%	\end{tabular} 
-%	%}
-%	\end{table}
-% \FloatBarrier
+For the creative pruning step~\cite{han2015learning}, it enhances its compressing networks by leveraging differentiability during the backpropagation stage. It not only allows for end-to-end learning but also shortens the training time significantly. In most of the algorithms nowadays, pruning is a significant step. The reason is that algorithms want to prune or truncate the unimportant data to reduce the parameters of the neural networks. 
 
-To understand further about compressing neural networks without losing too much accuracy and performance, we found four existing techniques. Those techniques are pruning~\cite{cheng2020survey}, quantization~\cite{pal2020autoencoding}, knowledge distillation~\cite{gol2021control}, and tensor decomposition~\cite{pal2020autoencoding} respectively, which are related to Table~\ref{neuralcompress-table}. 
+The quantization in the proposed paper~\cite{han2016deep} stated that pruning can also be implemented with the quantization without interference. The main idea of quantization is to reduce the number of bits that are represented in each weight. Generally, it manages the distribution of network weights, minimizing the quantization errors. Thus, it achieves a more efficient compression model. 
 
-For the creative pruning step~\cite{cheng2020survey}, it enhances its compressing networks by leveraging differentiability during the backpropagation stage. It is not only allowing for end-to-end learning but also shortens the training time significantly. In most of the algorithms nowadays, pruning is a significant step. The reason is because algorithms want to prune or truncate the unimportant data to reduce the parameters of the neural networks. 
+The idea behind the knowledge distillation is to design effective Convolutional Neural Networks (CNNs) under resource-limited environments. It is mostly focusing on multi-tasking learning. The paper proposed that knowledge distillation works well in transferring a complex model to a single distilled model. The method also nearly maintains all the improvements from the original performance~\cite{liu2019improving}. 
 
-The quantization in the proposed paper~\cite{pal2020autoencoding} stated that pruning can also be implemented with the quantization without interference. The main idea of quantization is to reduce the number of bits that is represented in each weights. Generally, it manages the distribution of network weights, minimizing the quantization errors. Thus, it achieves more efficient compression model. 
-
-The idea behind the knowledge distillation is to design effective Convolutional Neural Networks (CNNs) under resource-limited environments. It is mostly focusing on multi-tasking learning. The paper proposed that knowledge distillation works well on transferring a complex model to a single distilled model. The method also nearly maintains all the improvements from the original performance~\cite{gol2021control}. 
-
-For the tensor decomposition, it unveils the latent relations among complex structures in the neural networks, providing a pathway toward optimization. Thus, it makes sure it the holistic and effective.
+For the tensor decomposition~\cite{ye2018learning}, it unveils the latent relations among complex structures in the neural networks, providing a pathway toward optimization. Thus, it makes sure it the holistic and effective.
 
 In our words, we can always consider the compression as a process, which converts a large and complex book to a simple and summary abstract. Moreover, the process should also retain the main content and information.
 
 \subsection{Review of High-Performance Extreme Learning Machine (ELM)}
-The Extreme Learning Machine is a learning algorithm for single-hidden-layer feedforward neural networks, where the weights and biases of its hidden layer are generated randomly. The existing paper~\cite{akusok2019metal}, reveals that because of this feature, ELM usually has a faster speed than other traditional neural network learning algorithms. 
+The Extreme Learning Machine is a learning algorithm for single-hidden-layer feedforward neural networks, where the weights and biases of its hidden layer are generated randomly. The existing paper~\cite{akusok2019metal}, reveals that because of this feature, ELM usually has a faster speed than other traditional neural network learning algorithms. Fig.~\ref{elm-layers-image} illustrates the main three layers in ELM.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{./figure/elm.png}
+	\caption{A simple illustration on how ELM process works~\cite{erdem2020elmimage}.}
+	\label{elm-layers-image}
+\end{figure}
+%\FloatBarrier
 
 Currently, ELM has become more and more important since the rise of edge computing. In Cao’s existing research~\cite{cao2020edgecomputing}, we can find that the traditional cloud computing is not the best way anymore because of large-scale data, slow response speed and poor security. Edge computing acts as an important role, in order to solving the increasing volume of data and processing demands. Since edge computing can operate in close proximity to data sources, it enables more efficient data processing. According to the characteristics of edge computing, it allows algorithms to run on mobile devices directly, providing a more convenient computing environment for users. Despite the plenty of advantages of edge computing, it still has some limitations for the implementation of high-quality Neural Network applications.
 
 Akusok and his teammates found a new ELM implementing method, which is tailored for mobile devices with GPU acceleration. Their method combines the speed of a direct non-iterative solver with minimal memory requirements, making it suitable for edge computing situations. By comparing the performance between two different types of devices, iPad Pro and PC, it shows a result that the GPU on the iPad performs way better than the CPU on the laptop, which trained a 19000 neuron model using less than one gigabyte of memory successfully. Because of Akusok’s experiment~\cite{akusok2019metal}, tells us the potential for running Neural Networks on limited mobile devices and it also highlights the significance of the ELM.
 
 ELM also has some limitations. As the existing paper~\cite{akusok2019metal} mentioned, first of all, ELM is sensitive to certain types of data (i.e. ill-conditioned data), making it less accurate and reliable in some special situations. It also has a tendency to overfit, which means it might perform really well on training data but not as well on unseen data. Moreover, we need to remember that there is no one-size-fits-all setting for ELM. Different situation needs to change different parameters for ELM. In our words, finding the correct settings for ELM is just like a guessing and decision game, which is not always ideal for consistent results.
-
-%\begin{figure}[!h]
-%	\centering
-%	\includegraphics[width=0.5\textwidth]{./figure/elm.png}
-%	\caption{A simple illustration on how ELM process works}
-%	\label{elm_pic}
-%\end{figure}
-%\FloatBarrier
 
 \subsection{Review of NestDNN}
 Currently, more and more mobile devices, like smartphones, drones, and augmented reality headsets, are trying to change our daily lives, leading to the increasing demand for mobile devices. Since our researchers want to run the Neural Networks on our own mobile devices, we find that an algorithm called NestDNN may probably solve this problem. 
@@ -293,13 +270,13 @@ Fig.~\ref{nestdnn} illustrates the architecture of NestDNN, which is divided int
 
 To explain the detail of how NestDNN tackles the two challenges mentioned above, NestDNN utilizes a state-of-the-art \textit{Triplet Response Residual} (TRR) approach to rank the filters in a basic and unmodified deep learning model, such as Vanilla Model in Table~\ref{nest-table}. 
 
-The purpose of TRR is to measure the importance of filters and rank filters using their relative importance~\cite{fang2018nestdnn}. The researchers applied the method of calculating the \textit{L2} distances of features maps between the positive anchor image and negative anchor image. In each epochs, the algorithm will prune the unimportant filter. After the process, it then re-trained the model after pruning to compensate the accuracy loss during the filter pruning. 
+The purpose of TRR is to measure the importance of filters and rank filters using their relative importance~\cite{fang2018nestdnn}. The researchers applied the method of calculating the \textit{L2} distances of feature maps between the positive anchor image and negative anchor image. In each epoch, the algorithm will prune the unimportant filter. After the process, it re-trained the model after pruning to compensate for the accuracy loss during the filter pruning. 
 
-In the existing paper~\cite{fang2018nestdnn}, in order to solve context changes in mobile settings, NestDNN also explores an easy model freezing and filter growing, in order to generate the multi-capacity model in an iterative manner. The employment is happening during the model recovery phase where it uses the seed model as the initial point. During each iteration, model freezing is applied to freeze the parameters of all the model's filters~\cite{fang2018nestdnn}. Then, filter growing is applied to add the pruned filters. Doing these processes will create a descendant model where it has a larger capacity. The accuracy of this model is re-obtained through retraining process. Creating the descendant model is the same as training all other models, it is grown based on the precedent data. Finally, the last term, multi-capacity model is created. Since the algorithm repeats the iteration and creates several descendant models, after all iterations, it contains many capacities from the previous ones. Therefore, it is named multi-capacity model. 
+In the existing paper~\cite{fang2018nestdnn}, in order to solve context changes in mobile settings, NestDNN also explores an easy model freezing and filter growing, in order to generate the multi-capacity model in an iterative manner. The employment is happening during the model recovery phase where it uses the seed model as the initial point. During each iteration, model freezing is applied to freeze the parameters of all the model's filters~\cite{fang2018nestdnn}. Then, filter growing is applied to add the pruned filters. Doing these processes will create a descendant model that has a larger capacity. The accuracy of this model is re-obtained through the retraining process. Creating the descendant model is the same as training all other models, it is grown based on the precedent data. Finally, in the last term, the multi-capacity model is created. Since the algorithm repeats the iteration and creates several descendant models, after all iterations, it contains many capacities from the previous ones. Therefore, it is named the multi-capacity model. 
 
-In the last procedure of the offline stage, the architecture introduces model profiling. There is a profile to be generated by each multi-capacity model. As mentioned that multi-capacity model is created by multiple descendant models, a profile includes the inference accuracy, memory footprint, and processing latency~\cite{fang2018nestdnn}. 
+In the last procedure of the offline stage, the architecture introduces model profiling. There is a profile to be generated by each multi-capacity model. As mentioned the multi-capacity model is created by multiple descendant models, a profile includes the inference accuracy, memory footprint, and processing latency~\cite{fang2018nestdnn}. 
 
-Finally, the algorithm comes to the online stage. In this procedure, there is a scheduler that monitors the events. The event is about the change of runtime resources. The paper proposed that when the scheduler detects any changes, the algorithm checks the profiles of all running applications, and choose the optimized descendant model from each application. The reason to do this is to allocate the optimize resources to maximize the accuracy and minimize the processing latency of all concurrent applications~\cite{fang2018nestdnn}. 
+Finally, the algorithm comes to the online stage. In this procedure, there is a scheduler that monitors the events. The event is about the change of runtime resources. The paper proposed that when the scheduler detects any changes, the algorithm checks the profiles of all running applications, and chooses the optimized descendant model from each application. The reason to do this is to allocate the optimized resources to maximize the accuracy and minimize the processing latency of all concurrent applications~\cite{fang2018nestdnn}. 
 
 In the existing experiment~\cite{fang2018nestdnn}, we can find that NestDNN achieves up to a 4.2\% increase in inference accuracy, doubles the video frame processing rate, and reduces energy consumption by 1.7 times. Because of this experimental result, NestDNN is indeed a useful and easy method for deploying deep learning on mobile devices.
 
@@ -309,12 +286,12 @@ There are many constraints of mobile devices, such as computing power, battery c
 
 For this topic, there is one main challenge in deploying CNNs on mobile devices: limited resources. Running some deeper CNNs, especially for complex tasks like ImageNet classification, is still hard to implement. In the existing paper written by Kim~\cite{kim2016compression}, there is a new method called “one-shot whole network compression” which is a simple and effective way to compress CNNs. This existing algorithm can be divided into three steps: rank selection with variational Bayesian matrix factorization (VBMF), Tucker decomposition on the kernel tensor, and fine-tuning to recover any loss in accuracy. Fig.~\ref{one-shot-steps} shows the scheme of these three steps of this algorithm.
 
-%\begin{figure}[!h]
-%	\centering
-%	\includegraphics[width=1\textwidth]{./figure/one-shot-steps.png}
-%	\caption{The scheme of one-show whole network compression, which includes three steps~\cite{kim2016compression}.}
-%	\label{one-shot-steps}
-%\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1\textwidth]{./figure/one-shot-steps.png}
+	\caption{The scheme of one-show whole network compression, which includes three steps~\cite{kim2016compression}.}
+	\label{one-shot-steps}
+\end{figure}
 
 In Kim’s paper~\cite{kim2016compression}, rank selection with variational Bayesian matrix factorization (VBMF) aims to determine the rank of each layer in the neural network. By applying VBMF on each kernel tensor, it can find noisy variance, rank, and rank recovery easily in an automatic way. It makes good preconditions for Tucker decomposition. Tucker decomposition on the kernel tensor is used to compress both convolutional and fully-connected layers of the neural network. It preserves the essential features, meanwhile, compressing successfully. After doing the two steps, Kim’s algorithm applies find-tuning to recover the loss in accuracy. This process makes sure that the compressed model retains its performance and accuracy close to the uncompressed model.
 
@@ -325,7 +302,7 @@ Until now, many neural networks have been discovered or created by researchers a
 
 In most neural network research, we deduce that the network performance is because of the parameters. For instance, if we implement image segmentation, high-frequency components are not as crucial for the task since they capture the details of the image which is not necessary for the segmentation. Therefore, applying the frequency domain transform is a practical method~\cite{zhao2023frequency}. Also, since the frequency domain transform converts the signals into numerical data, we can easily manipulate the quantitative image information for the compression algorithm. In frequency regularization, it focuses on implementing the transform to restrict the information redundancy. The reason is because of the interpretation of the complicated architectures of the networks. Frequency domain transforms for compressing networks may not work as expected on the pre-trained models where the result was obtained in the previous research~\cite{zhao2023frequency},~\cite{NEURIPS2018}. 
 
-When applying the neural network compression algorithms, we want to ensure the accuracy of the output compared with the original dataset. However, we will need to understand what shortcomings this algorithm may contain. The frequency regularization algorithm proposed in this paper contains some limitations when implementing in the neural network. During the neural network training, it is assumed that the high-frequency components are not significant. As introduced in the previous section~\ref{fr}, the segments that illustrate high-frequency zigzag information are truncated, which may eliminate the necessary details. The researchers reveal this disadvantage when applying frequency regularization in the image generation task. Parameters cannot be truncated too much compared to the task of image segmentation~\cite{zhao2023frequency}. Another disadvantage mentioned in the paper is regarding the memory usage of the devices. Since the algorithm is handled in the frequency domain, it needs to convert the parameters into the spatial domain for convolutional operations. Therefore, the implementation of the algorithm requires more memory during the training. 
+When applying the neural network compression algorithms, we want to ensure the accuracy of the output compared with the original dataset. However, we will need to understand what shortcomings this algorithm may contain. The frequency regularization algorithm proposed in this paper contains some limitations when implemented in the neural network. During the neural network training, it is assumed that the high-frequency components are not significant. As introduced in the previous section~\ref{fr}, the segments that illustrate high-frequency zigzag information are truncated, which may eliminate the necessary details. The researchers reveal this disadvantage when applying frequency regularization in the image generation task. Parameters cannot be truncated too much compared to the task of image segmentation~\cite{zhao2023frequency}. Another disadvantage mentioned in the paper is regarding the memory usage of the devices. Since the algorithm is handled in the frequency domain, it needs to convert the parameters into the spatial domain for convolutional operations. Therefore, the implementation of the algorithm requires more memory during the training. 
 
 Although there may still exist some shortcomings, such as the total training time, we are still researching frequency regularization to be our target to implement neural network compression. The reason is because of the main following reasons: First, we can apply this algorithm to general neural network architectures. Second, it does not reduce the accuracy percentage. We will introduce them respectively. 
 
@@ -334,8 +311,6 @@ We can achieve frequency regularization by two processes. The first one is the d
 The dynamic tail truncation is used in this algorithm. From the research paper, the authors concluded that most parameters in convolutional networks can be eliminated. However, there exists an issue where the parameters that are not eliminated may affect the backpropagation. Therefore, the training loss may stay the same in many epochs~\cite{zhao2023frequency}. The strategy of dynamic tail truncation addresses this issue by continuously setting a few tail elements to 0 in every epoch but not directly setting most of them at once.
 
 The idea behind the frequency regularization is to maintain the tensors in the frequency domain instead of the spatial domain. By implementing this, it allows the tail elements to be eliminated by a dot product with the zigzag mask matrix. After the dynamic tail truncation mentioned above, the algorithm then inputs the tensors to the inverse discrete cosine transform. The purpose of the inverse discrete cosine transforms is not only the role of reconstructing the spatial tensors. An inverse discrete cosine transform process can be implemented for tensors with any form. It leads to an important functionality, for instance, applied to any tensors from neural networks~\cite{zhao2023frequency}. 
-
-
 
 \subsection{Review on Implementation on Mobile Devices}
 
@@ -346,7 +321,7 @@ In Jin's paper~\cite{jin2014implement}, they implement deep convolutional neural
 In Castanyer's paper, they try to identify the most challenging part when deploying deep learning-based software in mobile applications. It includes what are the challenges that we may encounter during the implementation of the neural network on mobile devices and how we can control the complexity while maintaining a high amount of accuracy. The researchers used PyTorch and the Android framework to design some studies and set goals to diagnose the challenges. After some experiments, they discovered a few categories that needed to be considered. The first category is the challenge that is verified to be real and concerning. It includes software-data dependency, sustainability, and frameworks in the early stages. The second category is the challenge that has been identified but is not faced in the study. It includes explainability. The last category is the newly defined challenges based on their experiment studies. The researchers mainly focus on fixing the first category by applying the data augmentation technique to reduce the data-software dependency and increase the sustainability of the applications~\cite{cast2020integration}.
 
 
-\pagebreak
+% \pagebreak
 \small
 \bibliographystyle{unsrt}
 % \bibliographystyle{plain}

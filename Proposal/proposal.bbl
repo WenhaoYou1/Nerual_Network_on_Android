@@ -61,20 +61,30 @@ Phil Picton.
 James~O' Neill.
 \newblock An overview of neural network compression, 2020.
 
-\bibitem{cheng2020survey}
-Yu~Cheng, Duo Wang, Pan Zhou, and Tao Zhang.
-\newblock A survey of model compression and acceleration for deep neural
-  networks, 2020.
+\bibitem{han2015learning}
+Song Han, Jeff Pool, John Tran, and William~J. Dally.
+\newblock Learning both weights and connections for efficient neural networks,
+  2015.
 
-\bibitem{pal2020autoencoding}
-Safalya Pal.
-\newblock Auto-encoding for shared cross domain feature representation and
-  image-to-image translation, 2020.
+\bibitem{han2016deep}
+Song Han, Huizi Mao, and William~J. Dally.
+\newblock Deep compression: Compressing deep neural networks with pruning,
+  trained quantization and huffman coding, 2016.
 
-\bibitem{gol2021control}
-Ebru~Aydin Gol.
-\newblock Control synthesis for parametric timed automata under unavoidability
-  specifications, 2021.
+\bibitem{liu2019improving}
+Xiaodong Liu, Pengcheng He, Weizhu Chen, and Jianfeng Gao.
+\newblock Improving multi-task deep neural networks via knowledge distillation
+  for natural language understanding, 2019.
+
+\bibitem{ye2018learning}
+Jinmian Ye, Linnan Wang, Guangxi Li, Di~Chen, Shandian Zhe, Xinqi Chu, and
+  Zenglin Xu.
+\newblock Learning compact recurrent neural networks with block-term tensor
+  decomposition, 2018.
+
+\bibitem{erdem2020elmimage}
+Kemal Erdem.
+\newblock Introduction to extreme learning machines, May 2020.
 
 \bibitem{cao2020edgecomputing}
 Keyan Cao, Yefan Liu, Gongjie Meng, and Qimeng Sun.
