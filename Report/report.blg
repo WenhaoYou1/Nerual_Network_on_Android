@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Homebrew)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ref.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 2403 of file IEEEtran.bst
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 2403 of file IEEEtran.bst
+
+Done.
+You've used 7 entries,
+            4087 wiz_defined-function locations,
+            865 strings with 8760 characters,
+and the built_in function-call counts, 4649 in all, are:
+= -- 341
+> -- 124
+< -- 22
++ -- 69
+- -- 31
+* -- 239
+:= -- 715
+add.period$ -- 16
+call.type$ -- 7
+change.case$ -- 9
+chr.to.int$ -- 57
+cite$ -- 7
+duplicate$ -- 337
+empty$ -- 398
+format.name$ -- 30
+if$ -- 1046
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 73
+newline$ -- 48
+num.names$ -- 9
+pop$ -- 195
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 334
+stack$ -- 0
+substring$ -- 156
+swap$ -- 250
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 7
+warning$ -- 0
+while$ -- 15
+width$ -- 8
+write$ -- 88
+(There were 3 error messages)
