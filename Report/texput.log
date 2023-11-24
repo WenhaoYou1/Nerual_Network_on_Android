@@ -1,6 +1,7 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Homebrew) (preloaded format=xelatex 2023.6.22)  23 NOV 2023 01:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=latex 2023.6.22)  24 NOV 2023 02:04
 entering extended mode
  restricted \write18 enabled.
+ Source specials enabled.
  %&-line parsing enabled.
 **ref.tex
 
@@ -11,11 +12,11 @@ entering extended mode
 
  
 Here is how much of TeX's memory you used:
- 1 string out of 476683
- 10 string characters out of 5795667
- 1842018 words of memory out of 5000000
- 20352 multiletter control sequences out of 15000+600000
+ 2 strings out of 476026
+ 105 string characters out of 5780559
+ 1849385 words of memory out of 5000000
+ 20558 multiletter control sequences out of 15000+600000
  512287 words of font info for 32 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  0i,0n,0p,1b,6s stack positions out of 10000i,1000n,20000p,200000b,200000s
 No pages of output.
