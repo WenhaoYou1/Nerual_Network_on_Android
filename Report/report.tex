@@ -1,0 +1,148 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{arydshln}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{wrapfig} 
+\usepackage{changepage}
+\usepackage{listings}
+\lstset{
+	basicstyle=\small\ttfamily,
+	language=Python,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	backgroundcolor=\color{gray!10},
+	frame=single,
+	breaklines=true,
+	showstringspaces=false,
+	tabsize = 2,
+}
+\usepackage{multirow}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+\usepackage[unicode, pdftex]{hyperref}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\newcommand{\reffig}[1]{Fig. \ref{#1}}
+\newcommand{\refsec}[1]{Section \ref{#1}}
+% \newcommand{\refeq}[1]{Eq. \ref{#1}}
+\newcommand{\reftab}[1]{Table \ref{#1}}
+
+
+\begin{document}
+
+\title{Deployment of Frequency Regularization on Android Mobile Devices\
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Wenhao You}
+	\IEEEauthorblockA{\textit{Department of Computing Science} \\
+		\textit{University of Alberta}\\
+		Edmonton, Canada \\
+		wyou1@ualberta.ca}
+	\and
+	\IEEEauthorblockN{2\textsuperscript{nd} Leo Chang}
+	\IEEEauthorblockA{\textit{Department of Computing Science} \\
+		\textit{University of Alberta}\\
+		Edmonton, Canada \\
+		basu@ualberta.ca}
+}
+
+\maketitle
+
+\begin{abstract}
+	
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+	
+convolutional neural networks, frequency regularization.
+
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Currently, people can not live without mobile devices. These compact yet powerful gadgets have become indispensable tools for communication, entertainment, and information. Their portability and versatility make them a constant companion. Meanwhile, Convolutional neural networks play an important role in computer vision applications. However, these neural networks are usually implemented on high-specification hardware. There are several advantages of running convolutional neural networks on mobile devices: privacy, internet, and runtime. For enhancing privacy, personal information does not need to be uploaded or transmitted to the cloud servers anymore. For reading the dependence on the internet connection, the functionality on local devices can replace some internet services. For the runtime, especially some applications that need real-time feedback, without connecting to the cloud server can shorten the processing time. In all, convolutional neural networks can totally replace the usage of many applications on mobile devices, ensuring personal data security. 
+
+According to the popularity of mobile devices and the benefits of convolutional neural networks, we want to find a way to deploy some large and complex convolutional neural networks on mobile devices, leading to the question: “How can we deploy large convolutional neural networks on mobile devices?”
+
+We found five methods to achieve our goal: upgrade the hardware of mobile devices; use Extreme Learning Machine (ELM)~\cite{anton2021elm} to allocate the weight of the hidden layers randomly in order to train large models on mobile devices faster; use NestDNN~\cite{fang2018nestdnn} dynamically adjust the size and computational complexity of the network based on available resources on mobile devices; use “One-shot Whole Network Compression”~\cite{kim2016oneshot} to prune, quantize, and compress the neural networks; use Frequency Regularization (FR)~\cite{zhao2023fr} to reduce parameters by removing high-frequency component. We make a more detailed introduction to their drawbacks and limitations in Section~\ref{related_work}.
+
+After conducting a thorough literature review, considering all the limitations, accuracy, complexity, and future potential, we choose Frequency Regularization (FR) as our target algorithm, deploying it on one of the most popular mobile devices - Android mobile. Our main idea uses FR to compress a convolutional neural network U-Net and then decompresses the uploaded compressed model on an Android mobile device in a short time. After that, use the decompressed model to do image segmentation for the Carvana Image Masking Challenge Dataset~\cite{brian2017carvanadataset}. 
+
+The proposed main idea can be divided into three directions to achieve the final goal respectively:
+\begin{itemize}
+	\item Direct deployment and tuning of FR code~\cite{fr_repo} on Android: Instead of introducing an additional operating system layer, this method focuses on deploying the Frequency Regularization (FR) algorithm within the Android ecosystem directedly. The core idea of this direction is to optimize and adjust the FR parameters specifically for the Android hardware and software architecture. 
+	\item Deployment of Linux environment on Android system: It aims to add another layer to the Android system, providing a more controlled and flexible development environment for deploying and testing deep learning models. We choose Termux~\cite{termux_repo},~\cite{termux_overview},~\cite{termux_wiki} which is an Android terminal application and Linux environment to deploy. 
+	\item Deployment of FR code on Android Studio: This method aims to optimize the FR algorithm for Android's native architecture, ensuring seamless integration and operation within Android. The main idea of this method is similar to the first direction above.
+\end{itemize}	 		
+
+\section{Related Work}\label{related_work}
+
+Extreme learning machine (ELM) has been widely used in artificial intelligence field over the last decades~\cite{anton2021elm},~\cite{ding2014elmapp},~\cite{wang2022elmapp},~\cite{deng2015elmapp},~\cite{huang2006elmapp}. Although this algorithm has seen significant development, it also has several drawbacks: 
+\begin{itemize}
+	\item Poor tunability: It has poor controllability of the model since ELM calculates the least squares solution directly, and users cannot analyze the characteristics of the datasets to fine-tune. Adjusting models based on specific performance of mobile devices is important to mobile development.
+	\item Lack of robustness: The performance of the model can be affected significantly while including certain outliers in different datasets, indicating poor robustness. Deployment on mobile devices needs to handle various inputs, including every potential outlier. Although there are many advanced versions of ELM~\cite{john2015advancedelm},~\cite{zhang2015advancedelm},~\cite{zhu2005advancedelm},~\cite{sun2017advancedelm} they lacks universality and are not as easy as other algorithms to deploy.
+	\item Overfitting issues: While deploying large convolutional neural networks on mobile devices, model generalization is crucial since overfitting can result in poor performance on unseen data. ELM easily leads to overfitting issues because it is based on empirical risk minimization without considering structural risk. Xue et al.~\cite{ying2019overfit}pointed to a regularization strategy to solve this problem by feature-selection.
+\end{itemize}	 
+
+NestDNN is a framework that takes the dynamics of runtime resources into account~\cite{fang2018nestdnn}. The experiment of Fang et al.~\cite{fang2018nestdnn} achieves as much as 4.2\% increase in inference accuracy, 2.0× increase in video frame processing rate and 1.7× reduction in energy consumption. However, NestDNN also comes with some limitations. Its computational cost is significantly higher by using filter pruning method Triplet Response Residual (TRR). The high computational cost could probably exceed the processing capabilities of existing mobile devices and the runtime of model generation may be too long, which is not suitable for our deployment. 
+
+"One-shot Whole Network Compression "~\cite{kim2016oneshot} includes removing certain parameters or structures, which is irreversible. Moreover, by using this compression method, the accuracy is too low. For example, in the experiment of Kim et al., by using AlexNet, the accuracy of the compressed model can drop by more than 50\%. In order to increase its accuracy, we have to make fine-tuning on the compressed model. Increasing accuracy requires at least more than 10 training epochs, which wastes too much time.
+
+The proposed frequency regularization (FR)~\cite{zhao2023fr} works by restricting the non-zero elements of network parameters in the frequency domain, thus reducing information redundancy. Table~\ref{table:fr_unet} illustrates the evaluation of the proposed frequency regularization on UNet, according to compression rate, number of parameters, and dice score. Dice score is a metric for assessing the quality of image segmentation and ranges from 0 to 1, where 0 indicates no overlap and 1 indicates perfect overlap. The data under the dashed line represents the result under the most extreme condition in which only 759 float16 parameters are kept in UNet-v4. Thus, according to the surprised and satisfying experiment outcomes, we choose the frequency regularization as our compression method, to deploy it on mobile devices (i.e. Android system).
+
+\begin{table}[H]
+	\caption{Evaluation of the proposed frequency regularization on UNet for image segmentation tasks using Carvana Image Masking Challenge Dataset~\cite{zhao2023fr},~\cite{brian2017carvanadataset}.} 
+	\label{table:fr_unet}
+	\small
+	\centering
+	\begin{tabular}{p{1.15cm}rrr}
+		\toprule\toprule
+		&Dice Score&Compression Rate&\# of Parameters\\ 
+		\midrule
+		UNet-ref&99.13\%&100\%(1×)&31,043,586\\
+		UNet-v1&99.51\%&1\%(100×)&310,964\\
+		UNet-v2&99.37\%&0.1\%(1000×)&31,096\\
+		UNet-v3&98.86\%&0.0094\%(10573×)&2,936\\
+		\cdashline{1-4}
+		UNet-v4&97.19\%&0.0012\%(81801×)&759(float16)\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Termux~\cite{termux_repo},~\cite{termux_overview},~\cite{termux_wiki}  is an Android terminal application and Linux environment. It works directly with no rooting or setup required. To use Termux, the system needs to meet some requirements: Android 5.0 - 12.0; CPU: AArch64, ARM, i686, x86\_64; at least 300 MB of disk space. It is open source and can be accessed at https://github.com/termux/termux-app. The instruction of deploy Termux on Android devices is available at https://github.com/btxcy/NeuralOnMobile\#readme. 
+
+\section{Methodology} 
+xxxx
+
+\section{Experiment} 
+xxxx
+
+\section{Limitation and Future Work} 
+xxxx
+
+\section{Conclusion} 
+xxxx
+
+\bibliographystyle{IEEEtran}  
+\bibliography{ref}
+
+\end{document}
