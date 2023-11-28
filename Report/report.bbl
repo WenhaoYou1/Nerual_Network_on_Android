@@ -150,4 +150,16 @@ X.~Ying, ``An overview of overfitting and its solutions,'' \emph{Journal of
   Available: \url{https://dx.doi.org/10.1088/1742-6596/1168/2/022022}
 \BIBentrySTDinterwordspacing
 
+\bibitem{ubuntu_in_termux_repo}
+\BIBentryALTinterwordspacing
+A.~Argentakis, ``ubuntu-in-termux,'' 2023. [Online]. Available:
+  \url{https://github.com/MFDGaming/ubuntu-in-termux}
+\BIBentrySTDinterwordspacing
+
+\bibitem{nerual_on_mobile_repo}
+\BIBentryALTinterwordspacing
+W.~You and L.~Chang, ``Nerual networks on mobile devices,'' 2023. [Online].
+  Available: \url{https://github.com/btxcy/NeuralOnMobile}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

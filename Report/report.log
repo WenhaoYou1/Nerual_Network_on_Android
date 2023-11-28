@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.6.22)  24 NOV 2023 02:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.6.22)  27 NOV 2023 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,15 +674,25 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+46.
 
-(./report.bbl
+(/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/psnfss/ot1pcr.
+fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [2]
+<figures/mobile_seg.png, id=127, 4327.16624pt x 1927.2pt>
+File: figures/mobile_seg.png Graphic file (type png)
+<use figures/mobile_seg.png>
+Package pdftex.def Info: figures/mobile_seg.png  used on input line 159.
+(pdftex.def)             Requested size: 252.0pt x 112.21584pt.
+ (./report.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[2]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -701,36 +711,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (./report.aux)
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 68A3051B160B134D43504E0A56525BCF;676
-(rerunfilecheck)             After:  B36DB9890FB02D5399EA4C0018F3AC7D;769.
+[3 <./figures/mobile_seg.png>] (./report.aux)
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 98917B5B514981EFAC4BE0DCA8F5F4B5;1917.
  ) 
 Here is how much of TeX's memory you used:
- 13163 strings out of 476025
- 210083 string characters out of 5780533
- 1875388 words of memory out of 5000000
- 33387 multiletter control sequences out of 15000+600000
- 557491 words of font info for 127 fonts, out of 8000000 for 9000
+ 13228 strings out of 476025
+ 211156 string characters out of 5780533
+ 1874388 words of memory out of 5000000
+ 33436 multiletter control sequences out of 15000+600000
+ 558006 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,1108b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,76p,1108b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy7.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts
-/type1/urw/times/utmb8a.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-d
-ist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/Cellar/texlive/20230313_2/sha
-re/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/Cellar/texlive/20230
-313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 80006 bytes).
+/type1/urw/courier/ucrr8a.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/Cellar/texlive/20230313_2/sh
+are/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/Cellar/texlive/202
+30313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/Cellar/te
+xlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (3 pages, 4193505 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -115,9 +115,9 @@ The proposed frequency regularization (FR)~\cite{zhao2023fr} works by restrictin
 	\small
 	\centering
 	\begin{tabular}{p{1.15cm}rrr}
-		\toprule\toprule
+		\toprule
 		&Dice Score&Compression Rate&\# of Parameters\\ 
-		\midrule
+		\midrule\midrule
 		UNet-ref&99.13\%&100\%(1×)&31,043,586\\
 		UNet-v1&99.51\%&1\%(100×)&310,964\\
 		UNet-v2&99.37\%&0.1\%(1000×)&31,096\\
@@ -131,10 +131,35 @@ The proposed frequency regularization (FR)~\cite{zhao2023fr} works by restrictin
 Termux~\cite{termux_repo},~\cite{termux_overview},~\cite{termux_wiki}  is an Android terminal application and Linux environment. It works directly with no rooting or setup required. To use Termux, the system needs to meet some requirements: Android 5.0 - 12.0; CPU: AArch64, ARM, i686, x86\_64; at least 300 MB of disk space. It is open source and can be accessed at https://github.com/termux/termux-app. The instruction of deploy Termux on Android devices is available at https://github.com/btxcy/NeuralOnMobile\#readme. 
 
 \section{Methodology} 
-xxxx
+\subsection{Termux}
+"why we need termux, use for doing what"
 
-\section{Experiment} 
-xxxx
+\subsection{Android Studio}
+"why we need Android Studio, use for doing what. any special compared with Termux?"
+
+
+
+\section{Experiments} 
+\subsection{Packaging frequency regularization Project}~\label{package_fr}
+As current and future plans of Zhao et al.~\cite{fr_repo},~\cite{zhao2023fr}, we have accomplished the development of a pip repository for their Frequency Regularization technique and committed to their original repository. We can now integrate Frequency Regularization into our project by simply running the command line in Linux environment:
+
+	\begin{verbatim}
+		$ pip install frereg
+	\end{verbatim}
+
+This step is instrumental in simplifying the deployment of condensed yet potent models in pragmatic applications. We will use this python library in Section~\ref{build_linux}.
+
+\subsection{Build Linux environment and install the frequency regularization package} ~\label{build_linux}
+We utilized an Android device which ran version 12.0.1 for this section. In order to facilitate the deployment of an Ubuntu environment within the Android system, we downloaded Termux~\cite{termux_repo},~\cite{termux_overview},~\cite{termux_wiki} , which version is v0.118.0. Upon accessing Termux, we employed a suite of basic tools, such as wget, proot, and git, to establish the Ubuntu environment. The Ubuntu package~\cite{ubuntu_in_termux_repo} we used is quite different from the conventional Ubuntu installations on normal personal computers. For more detailed steps of setting up the environment, please check our source code repository~\cite{nerual_on_mobile_repo}. After initiating the Ubuntu environment and installing both Python and the Python-pip tool, we used the command line we mentioned in Section~\ref{package_fr}, installing the frequency regularization project successfully.
+
+
+\subsection{Deployment of Android Studio}
+	\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\linewidth]{figures/mobile_seg.png}
+	\caption{The segmentation results of UNet.}
+\end{figure}
+
 
 \section{Limitation and Future Work} 
 xxxx
