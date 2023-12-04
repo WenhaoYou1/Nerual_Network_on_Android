@@ -105,7 +105,7 @@ Extreme learning machine (ELM) has been widely used in artificial intelligence f
 
 NestDNN is a framework that takes the dynamics of runtime resources into account~\cite{fang2018nestdnn}. The experiment of Fang et al.~\cite{fang2018nestdnn} achieves as much as 4.2\% increase in inference accuracy, 2.0× increase in video frame processing rate and 1.7× reduction in energy consumption. However, NestDNN also comes with some limitations. Its computational cost is significantly higher by using filter pruning method Triplet Response Residual (TRR). The high computational cost could probably exceed the processing capabilities of existing mobile devices and the runtime of model generation may be too long, which is not suitable for our deployment. 
 
-"One-shot Whole Network Compression "~\cite{kim2016oneshot} includes removing certain parameters or structures, which is irreversible. Moreover, by using this compression method, the accuracy is too low. For example, in the experiment of Kim et al., by using AlexNet, the accuracy of the compressed model can drop by more than 50\%. In order to increase its accuracy, we have to make fine-tuning on the compressed model. Increasing accuracy requires at least more than 10 training epochs, which wastes too much time.
+``One-shot Whole Network Compression"~\cite{kim2016oneshot} includes removing certain parameters or structures, which is irreversible. Moreover, by using this compression method, the accuracy is too low. For example, in the experiment of Kim et al., by using AlexNet, the accuracy of the compressed model can drop by more than 50\%. In order to increase its accuracy, we have to make fine-tuning on the compressed model. Increasing accuracy requires at least more than 10 training epochs, which wastes too much time.
 
 The proposed frequency regularization (FR)~\cite{zhao2023fr} works by restricting the non-zero elements of network parameters in the frequency domain, thus reducing information redundancy. Table~\ref{table:fr_unet} illustrates the evaluation of the proposed frequency regularization on UNet, according to compression rate, number of parameters, and dice score. Dice score is a metric for assessing the quality of image segmentation and ranges from 0 to 1, where 0 indicates no overlap and 1 indicates perfect overlap. The data under the dashed line represents the result under the most extreme condition in which only 759 float16 parameters are kept in UNet-v4. Thus, according to the surprised and satisfying experiment outcomes, we choose the frequency regularization as our compression method, to deploy it on mobile devices (i.e. Android system).
 
@@ -130,13 +130,16 @@ The proposed frequency regularization (FR)~\cite{zhao2023fr} works by restrictin
 
 Termux~\cite{termux_repo},~\cite{termux_overview},~\cite{termux_wiki}  is an Android terminal application and Linux environment. It works directly with no rooting or setup required. To use Termux, the system needs to meet some requirements: Android 5.0 - 12.0; CPU: AArch64, ARM, i686, x86\_64; at least 300 MB of disk space. It is open source and can be accessed at https://github.com/termux/termux-app. The instruction of deploy Termux on Android devices is available at https://github.com/btxcy/NeuralOnMobile\#readme. 
 
-\section{Methodology} 
+\section{Methodology}\label{methodology}
 \subsection{Termux}
 "why we need termux, use for doing what"
 
-\subsection{Android Studio}
-"why we need Android Studio, use for doing what. any special compared with Termux?"
+\subsection{Android Studio}~\label{as_method}
+% "why we need Android Studio, use for doing what. any special compared with Termux?"
+The reason for applying the algorithm by the Android Studio is because there is less memory consumption during the run. The logic of running on Termux is to create a virtual environment and run an operating system, in our experiment, Ubuntu. Although we are running the compact version of Ubuntu, the limitation is that Ubuntu does not recognize the type of device we are running on. Therefore, it brings up the problem of installing the incapable PyTorch or other libraries. Whereas on an Android application, there is no virtual environment involved. 
 
+\subsection{Memory Usage Compression}
+As we run the algorithm on mobile devices, the compressing algorithm becomes more significant in this experiment. Mobile device manufacturers increase their memory storage and CPUs to highlight their performance. There are some methods we implemented during the research to compress memory usage. For instance, when running the UNet neural network layers, saving the outputs in the local storage helps to decrease memory usage. The reason is that output tensors from each layer contain large sizes to store in the memory. But by saving them locally, we can instantly free the memory without occupying it. The next layer can easily access the tensors from the local storage instead of the memory. It helps to reduce about two gigabytes of memory usage. There is another method to reduce memory usage. As the algorithm requires more memory than the original NN module from PyTorch, we can make the Frequency Regularization algorithm run only once when initializing the neural network. However, the method does not have a dramatic decrease in memory usage as the previous method. 
 
 
 \section{Experiments} 
@@ -154,11 +157,21 @@ We utilized an Android device which ran version 12.0.1 for this section. In orde
 
 
 \subsection{Deployment of Android Studio}
-	\begin{figure}[htbp]
+As mentioned in Section~\ref{as_method}, the system can install an incapable PyTorch function through the virtual environment with mobile devices. Therefore, running the Python Script on the Android Studio required the library Chaquopy in this research. It helps us to implement the \textit{pip} library from Python. However, in some situations, some PyTorch features may still not work when running the code because of the difference in hardware structure between the computer and mobile devices~\cite{cpuarch}. For instance, the Discrete Fast Fourier Transforms, mobile devices do not support this operation due to the requirement of GPU involvement. Therefore, an alternative solution is to convert the tensor data to the NumPy array, which runs through the CPU. After the transformation, we then convert back to the PyTorch tensor array. Many functions require conversion to make it work in the Frequency Regularization algorithm. 
+
+We show the outputs from the algorithm running on an Android phone by making an application using Android Studio to run the Frequency Regularization. The only feature the application provides currently is importing the images from the local machine directory. After that, we get the output from the compressed neural network. 
+
+The left-hand side of the Fig. 1 shows the original images we want to implement the image segmentation. The middle images are the desired images of the segmented results. The right-hand side is the result of the implementation. The results are worse than the desired segmented images since we are trying to compress the memory usage. The implementation idea is to cut the original images into four pieces. After the process, we take the cut results into the neural network. Finally, we concatenate each result into one to restore its original state. The method compressed memory usage a lot \textbf{(need table here)}. However, the result of the dice score is not what we expected as the computer's.  
+
+% the image needs to be redo
+% separate original image with the results
+% result image: LHS: result of the computer, RHS: result of the phone implementation
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/mobile_seg.png}
 	\caption{The segmentation results of UNet.}
 \end{figure}
+
 
 
 \section{Limitation and Future Work} 
