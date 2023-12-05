@@ -162,4 +162,14 @@ W.~You and L.~Chang, ``Nerual networks on mobile devices,'' 2023. [Online].
   Available: \url{https://github.com/btxcy/NeuralOnMobile}
 \BIBentrySTDinterwordspacing
 
+\bibitem{chaquopy2023}
+{Chaquopy}, ``Chaquopy 14.0 documentation,''
+  \url{https://chaquo.com/chaquopy/doc/current/}, 2023, accessed: 2023-12-05.
+
+\bibitem{fojtik2022cpu}
+R.~Fojtik, ``New processor architecture and its use in mobile application
+  development,'' in \emph{Digital Science}, T.~Antipova, Ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Cham: Springer International Publishing, 2022, pp.
+  545--556.
+
 \end{thebibliography}

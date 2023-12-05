@@ -21,45 +21,45 @@ Too many commas in name 1 of "Jian Wang , Siyuan Lu, Shui-Hua Wang, Yu-Dong Zhan
 while executing---line 2403 of file IEEEtran.bst
 
 Done.
-You've used 20 entries,
+You've used 22 entries,
             4087 wiz_defined-function locations,
-            949 strings with 11077 characters,
-and the built_in function-call counts, 14616 in all, are:
-= -- 1221
-> -- 308
-< -- 112
-+ -- 184
-- -- 65
-* -- 741
-:= -- 2319
-add.period$ -- 42
-call.type$ -- 20
-change.case$ -- 23
-chr.to.int$ -- 252
-cite$ -- 20
-duplicate$ -- 1027
-empty$ -- 1111
-format.name$ -- 65
-if$ -- 3333
+            962 strings with 11371 characters,
+and the built_in function-call counts, 15935 in all, are:
+= -- 1329
+> -- 328
+< -- 121
++ -- 195
+- -- 68
+* -- 795
+:= -- 2528
+add.period$ -- 47
+call.type$ -- 22
+change.case$ -- 28
+chr.to.int$ -- 276
+cite$ -- 22
+duplicate$ -- 1125
+empty$ -- 1233
+format.name$ -- 68
+if$ -- 3641
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 187
-newline$ -- 113
-num.names$ -- 22
-pop$ -- 431
+int.to.str$ -- 22
+missing$ -- 205
+newline$ -- 119
+num.names$ -- 26
+pop$ -- 473
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1111
+skip$ -- 1212
 stack$ -- 0
-substring$ -- 653
-swap$ -- 851
-text.length$ -- 28
+substring$ -- 713
+swap$ -- 923
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 20
+type$ -- 22
 warning$ -- 0
-while$ -- 55
-width$ -- 22
-write$ -- 252
+while$ -- 62
+width$ -- 24
+write$ -- 271
 (There were 4 error messages)

@@ -131,15 +131,26 @@ The proposed frequency regularization (FR)~\cite{zhao2023fr} works by restrictin
 Termux~\cite{termux_repo},~\cite{termux_overview},~\cite{termux_wiki}  is an Android terminal application and Linux environment. It works directly with no rooting or setup required. To use Termux, the system needs to meet some requirements: Android 5.0 - 12.0; CPU: AArch64, ARM, i686, x86\_64; at least 300 MB of disk space. It is open source and can be accessed at https://github.com/termux/termux-app. The instruction of deploy Termux on Android devices is available at https://github.com/btxcy/NeuralOnMobile\#readme. 
 
 \section{Methodology}\label{methodology}
-\subsection{Termux}
-"why we need termux, use for doing what"
+\subsection{Deployment on Android Devices}~\label{deployment}
+To deploy the Frequency Regularization Compression Algorithm on Android devices, we have methodologies: using Termux to implement Linux environment on Android system and developing an Android Application with FR image segmentation by using Android Studio. 
+\begin{itemize}
+	\item\textbf{Termux:} "why we need termux, use for doing what"
+	\item\textbf{Android Studio:} The reason for applying the algorithm by the Android Studio is because there is less memory consumption during the run. The logic of running on Termux is to create a virtual environment and run an operating system, in our experiment, Ubuntu. Although we are running the compact version of Ubuntu, the limitation is that Ubuntu does not recognize the type of device we are running on. Therefore, it brings up the problem of installing the incapable PyTorch or other libraries. Whereas on an Android application, there is no virtual environment involved. 
+	\begin{itemize}
+		\item Normal FR on Android Application:
+		\item 4-parts FR on Android Application:
+	\end{itemize}	 		
+\end{itemize}	 		
 
-\subsection{Android Studio}~\label{as_method}
-% "why we need Android Studio, use for doing what. any special compared with Termux?"
-The reason for applying the algorithm by the Android Studio is because there is less memory consumption during the run. The logic of running on Termux is to create a virtual environment and run an operating system, in our experiment, Ubuntu. Although we are running the compact version of Ubuntu, the limitation is that Ubuntu does not recognize the type of device we are running on. Therefore, it brings up the problem of installing the incapable PyTorch or other libraries. Whereas on an Android application, there is no virtual environment involved. 
+\subsection{Qualitative and Quantitative Metrics}~\label{metrics}
+To analyze the results of our experiment, we have three qualitative and quantitative metrices: usage of random access memory, dice score, and visual perception.
+\begin{itemize}
+	\item\textbf{Usage of Random Access Memory (RAM): }
+	% As we run the algorithm on mobile devices, the compressing algorithm Frequency Regularization becomes more significant in this experiment. Mobile device manufacturers increase their memory storage and CPUs to highlight their performance. There are some methods we implemented during the research to compress memory usage. For instance, when running the U-Net neural network layers, saving the outputs in the local storage helps to decrease memory usage. The reason is that output tensors from each layer contain large sizes to store in the memory. But by saving them locally, we can instantly free the memory without occupying it. The next layer can easily access the tensors from the local storage instead of the memory. It helps to reduce about two gigabytes of random memory usage. There is another method to reduce memory usage. As the algorithm requires more memory than the original neural network model from PyTorch, we can make the Frequency Regularization algorithm run only once when initializing the neural network. However, the method does not have a dramatic decrease in memory usage as the previous method. 
+	\item\textbf{Dice Score:}
+	\item\textbf{Visual Perception:}
+\end{itemize}	
 
-\subsection{Memory Usage Compression}
-As we run the algorithm on mobile devices, the compressing algorithm becomes more significant in this experiment. Mobile device manufacturers increase their memory storage and CPUs to highlight their performance. There are some methods we implemented during the research to compress memory usage. For instance, when running the UNet neural network layers, saving the outputs in the local storage helps to decrease memory usage. The reason is that output tensors from each layer contain large sizes to store in the memory. But by saving them locally, we can instantly free the memory without occupying it. The next layer can easily access the tensors from the local storage instead of the memory. It helps to reduce about two gigabytes of memory usage. There is another method to reduce memory usage. As the algorithm requires more memory than the original NN module from PyTorch, we can make the Frequency Regularization algorithm run only once when initializing the neural network. However, the method does not have a dramatic decrease in memory usage as the previous method. 
 
 
 \section{Experiments} 
@@ -157,19 +168,40 @@ We utilized an Android device which ran version 12.0.1 for this section. In orde
 
 
 \subsection{Deployment of Android Studio}
-As mentioned in Section~\ref{as_method}, the system can install an incapable PyTorch function through the virtual environment with mobile devices. Therefore, running the Python Script on the Android Studio required the library Chaquopy in this research. It helps us to implement the \textit{pip} library from Python. However, in some situations, some PyTorch features may still not work when running the code because of the difference in hardware structure between the computer and mobile devices~\cite{cpuarch}. For instance, the Discrete Fast Fourier Transforms, mobile devices do not support this operation due to the requirement of GPU involvement. Therefore, an alternative solution is to convert the tensor data to the NumPy array, which runs through the CPU. After the transformation, we then convert back to the PyTorch tensor array. Many functions require conversion to make it work in the Frequency Regularization algorithm. 
+As mentioned in Section~\ref{deployment}, the system can install an incapable PyTorch function through the virtual environment with mobile devices. Therefore, running the Python Script on the Android Studio required the python library Chaquopy~\cite{chaquopy2023} in this research. It helps us to implement the \textit{pip} library from Python. However, in some situations, some PyTorch features may still not work when running the code because of the difference in hardware structure between the computer and mobile devices~\cite{fojtik2022cpu}. For instance, the Discrete Fast Fourier Transforms, mobile devices do not support this operation due to the requirement of GPU involvement. Therefore, an alternative solution is to convert the tensor data to the NumPy array, which runs through the CPU. After the transformation, we then convert back to the PyTorch tensor array. Many functions require conversion to make it work in the Frequency Regularization algorithm. 
 
 We show the outputs from the algorithm running on an Android phone by making an application using Android Studio to run the Frequency Regularization. The only feature the application provides currently is importing the images from the local machine directory. After that, we get the output from the compressed neural network. 
 
-The left-hand side of the Fig. 1 shows the original images we want to implement the image segmentation. The middle images are the desired images of the segmented results. The right-hand side is the result of the implementation. The results are worse than the desired segmented images since we are trying to compress the memory usage. The implementation idea is to cut the original images into four pieces. After the process, we take the cut results into the neural network. Finally, we concatenate each result into one to restore its original state. The method compressed memory usage a lot \textbf{(need table here)}. However, the result of the dice score is not what we expected as the computer's.  
+The left-hand column of the ~\ref{image:3_outputs} shows the original images we want to implement the image segmentation. From left to right, the three columns represent three outputs generated by an Android phone respectively: output from non-compressed model, output from FR compressed model, output from FR compressed model with 4 parts. Table~\ref{table:ram_usage} illustrates the results among three ways of image segmentation. \textbf{{analyze the avg. values here!}}
 
+% The middle images are the desired images of the segmented results. The right-hand side is the result of the implementation. The results are worse than the desired segmented images since we are trying to compress the memory usage. The implementation idea is to cut the original images into four pieces. After the process, we take the cut results into the neural network. Finally, we concatenate each result into one to restore its original state. The method compressed memory usage a lot \textbf{(need table here)}. However, the result of the dice score is not what we expected as the computer's.  
+
+
+\begin{table}[H]
+	\caption{Comparison of RAM Usage for Image Segmentation for Carvana Image Masking Challenge Dataset~\cite{brian2017carvanadataset} on an Android Phone: Uncompressed U-Net, FR Compressed and Decompressed U-Net, and FR Compressed and Decompressed U-Net Processing Four Parts of an Image Simultaneously.} 
+	\label{table:ram_usage}
+	\small
+	\centering
+	\begin{tabular}{rrrr}
+		\toprule
+		&Non-compressed&Compressed&Compressed(4-parts)\\
+		\midrule\midrule
+		1$^{st}$ Avg.&4.2966GB&1.2324GB&1.2553GB\\
+		2$^{nd}$ Avg.&4.2966GB&1.2324GB&1.2553GB\\
+		3$^{rd}$ Avg.&4.2966GB&1.2324GB&1.2553GB\\
+		\cdashline{1-4}
+		Total Avg.&xx&xx&xx\\
+		\bottomrule
+	\end{tabular}
+\end{table}
 % the image needs to be redo
 % separate original image with the results
 % result image: LHS: result of the computer, RHS: result of the phone implementation
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=1\linewidth]{figures/mobile_seg.png}
-	\caption{The segmentation results of UNet.}
+	\label{image:3_outputs}
+	\includegraphics[width=1\linewidth]{figures/3_outputs.png}
+	\caption{Comparison between Original Images and Outputs from Image Segmentation for Carvana Image Masking Challenge Dataset~\cite{brian2017carvanadataset} on an Android Phone: Uncompressed U-Net, FR Compressed and Decompressed U-Net, and FR Compressed and Decompressed U-Net Processing Four Parts of an Image Simultaneously.}
 \end{figure}
 
 
