@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.6.22)  5 DEC 2023 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.6.22)  6 DEC 2023 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -579,11 +579,7 @@ ckend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count321
 \l__pdf_internal_box=\box63
-) (./report.aux
-
-LaTeX Warning: Label `metrics' multiply defined.
-
-)
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -690,10 +686,15 @@ Overfull \hbox (15.47182pt too wide) in paragraph at lines 185--196
  [][] 
  []
 
-<figures/3_outputs.png, id=134, 2884.7775pt x 1927.2pt>
+
+Overfull \hbox (15.47182pt too wide) in paragraph at lines 203--214
+ [][] 
+ []
+
+<figures/3_outputs.png, id=130, 2884.7775pt x 1927.2pt>
 File: figures/3_outputs.png Graphic file (type png)
 <use figures/3_outputs.png>
-Package pdftex.def Info: figures/3_outputs.png  used on input line 203.
+Package pdftex.def Info: figures/3_outputs.png  used on input line 221.
 (pdftex.def)             Requested size: 252.0pt x 168.32376pt.
 (./report.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
@@ -730,43 +731,30 @@ Before submitting the final camera ready copy, remember to:
 [4
 
 ] (./report.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 4541434257BEBCB3F38B0A4FA91E922C;2389
-(rerunfilecheck)             After:  9638488718E34B804E528BC6524D4EBB;2157.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 9638488718E34B804E528BC6524D4EBB;2157.
  ) 
 Here is how much of TeX's memory you used:
  13242 strings out of 476025
- 211330 string characters out of 5780533
+ 211312 string characters out of 5780533
  1874388 words of memory out of 5000000
  33444 multiletter control sequences out of 15000+600000
  559113 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,76p,1137b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-</usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb></usr/local/Cellar/texlive/20230313_2/share/t
-exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/Cellar/texlive/2023031
-3_2/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/Cellar/texliv
-e/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/Cel
-lar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
-local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on report.pdf (4 pages, 2099575 bytes).
+</usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb></usr/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/Cellar/texlive/20230313_2/share
+/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/Cellar/texlive/20230
+313_2/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/Cellar/texl
+ive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/C
+ellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
+r/local/Cellar/texlive/20230313_2/share/texmf-dist/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on report.pdf (4 pages, 2099670 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
+ 228 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
  43 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
