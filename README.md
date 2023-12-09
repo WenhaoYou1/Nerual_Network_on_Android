@@ -2,6 +2,29 @@
 
 In this repository, we introduce two methods to deploy Frequency Regularization Models on Android devices: set up Linux environment and develop an android application.
 
+## Introduction
+
+### Repository Structure
+
+```
+.
+├── README.md
+├── future_work
+│   └── future_plan.pdf
+├── class_presentation
+│   └── DeploymentOnMobile.pptx
+├── proposal_and_literature_review
+│   └── ...
+├── report
+│   ├── IEEE_format
+│   ├── spring_conference_format
+│   └── raw_data
+│   │   ├── 1st_data
+│   │   └── ...
+└── source_code_frequency_regularization
+    └── ...
+```
+
 ## Getting Started
 
 ### Set Up Linux Environment on Android Devices
@@ -78,24 +101,28 @@ In this repository, we introduce two methods to deploy Frequency Regularization 
 
 4. Run the source code and select the image you want to implement segmentation.
 
-# Current and Future Plans
+## Current and Future Plans
 
 | Milestones                                           | Status       |
 | ---------------------------------------------------- | ------------ |
 | Package Up Frequency Regularization                  | ✔️ Completed |
 | Implement Linux Envrionment                          | ✔️ Completed |
-| Run Source Codes on Linux                            | 🔜 Upcoming  |
+| Implement Python Library on Android                  | ✔️ Completed |
 | Develop Android Application with FR                  | ✔️ Completed |
 | Develop Advanced User Interfaces and Functionalities | 🔜 Upcoming  |
 | Expand More Models not only U-Net                    | 🔜 Upcoming  |
 
-# Citation
+## Acknowledgement
+
+(Wenhao You and Leo Chang contributed equally to this work.)
+
+## Citation
 
 If you find our deployment of Frequency Regularization technique on Android Devices or utilize it in your research, we kindly encourage you to cite our paper:
 
 ```bibtex
 @ARTICLE{fr_android,
-  author={You, Wenhao and Chang, Leo},
+  author={You, Wenhao and Chang, Leo and Dong, Guanfang, and Basu, Anup},
   title={Deployment of Frequency Regularization on Android Devices},
   year={2023},
 }
