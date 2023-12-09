@@ -1,0 +1,148 @@
+\begin{thebibliography}{10}
+
+\bibitem{anton2021elm}
+Anton Akusok, {Leonardo Espinosa} Leal, Kaj-Mikael Bj{\"o}rk, and Amaury
+  Lendasse.
+\newblock High-performance elm for memory constrained edge computing devices
+  with metal performance shaders.
+\newblock In Jiuwen Cao, {Chi Man} Vong, Yoan Miche, and Amaury Lendasse,
+  editors, {\em Proceedings of ELM2019}, Proceedings in Adaptation, Learning
+  and Optimization, pages 79--88, International, 2021. Springer.
+
+\bibitem{ubuntu_in_termux_repo}
+Alexander Argentakis.
+\newblock ubuntu-in-termux, 2023.
+
+\bibitem{brian2017carvanadataset}
+Maggie Mark McDonald Patricia Will~Cukierski Brian~Shaler, DanGill.
+\newblock Carvana image masking challenge, 2017.
+
+\bibitem{chaquopy2023}
+{Chaquopy}.
+\newblock Chaquopy 14.0 documentation.
+\newblock \url{https://chaquo.com/chaquopy/doc/current/}, 2023.
+\newblock Accessed: 2023-12-05.
+
+\bibitem{deng2015elmapp}
+ChenWei Deng, GuangBin Huang, Jia Xu, and JieXiong Tang.
+\newblock Extreme learning machines: new trends and applications.
+\newblock {\em Science China Information Sciences}, 58(2):1--16, 2015.
+
+\bibitem{fr_repo}
+Guanfang Dong.
+\newblock Frequency regularization.
+\newblock
+  \url{https://github.com/guanfangdong/pytorch-frequency-regularization}, 2023.
+
+\bibitem{fang2018nestdnn}
+Biyi Fang, Xiao Zeng, and Mi~Zhang.
+\newblock Nestdnn: Resource-aware multi-tenant on-device deep learning for
+  continuous mobile vision.
+\newblock In {\em Proceedings of the 24th Annual International Conference on
+  Mobile Computing and Networking}, MobiCom ’18. ACM, October 2018.
+
+\bibitem{fojtik2022cpu}
+Rostislav Fojtik.
+\newblock New processor architecture and its use in mobile application
+  development.
+\newblock In Tatiana Antipova, editor, {\em Digital Science}, pages 545--556,
+  Cham, 2022. Springer International Publishing.
+
+\bibitem{john2015advancedelm}
+John~M. Fossaceca, Thomas~A. Mazzuchi, and Shahram Sarkani.
+\newblock Mark-elm: Application of a novel multiple kernel learning framework
+  for improving the robustness of network intrusion detection.
+\newblock {\em Expert Systems with Applications}, 42(8):4062--4080, 2015.
+
+\bibitem{fu2016visual}
+Yan Fu and Shengchun Wang.
+\newblock A no reference image quality assessment metric based on visual
+  perception.
+\newblock {\em Algorithms}, 9(4), 2016.
+
+\bibitem{huang2006elmapp}
+Guang-Bin Huang, Qin-Yu Zhu, and Chee-Kheong Siew.
+\newblock Extreme learning machine: Theory and applications.
+\newblock {\em Neurocomputing}, 70(1):489--501, 2006.
+\newblock Neural Networks.
+
+\bibitem{wang2022elmapp}
+Shui-Hua Wang Yu-Dong~Zhang Jian~Wang, Siyuan~Lu.
+\newblock A review on extreme learning machine.
+\newblock {\em Multimedia Tools and Applications}, 81(29):41611--41660, 2022.
+
+\bibitem{kim2016oneshot}
+Yong-Deok Kim, Eunhyeok Park, Sungjoo Yoo, Taelim Choi, Lu~Yang, and Dongjun
+  Shin.
+\newblock Compression of deep convolutional neural networks for fast and low
+  power mobile applications, 2016.
+
+\bibitem{dicescore2023}
+{OECD.AI}.
+\newblock Dice score, 2023.
+\newblock Catalogue of Tools \& Metrics for Trustworthy AI.
+
+\bibitem{termux_overview}
+Masud Rana.
+\newblock Open and accessible education with virtual reality, 2022.
+
+\bibitem{ding2014elmapp}
+Ru~Nie Shifei~Ding, Xinzheng~Xu.
+\newblock Extreme learning machine and its applications.
+\newblock {\em Neural Computing and Applications}, 25(3):549--556, 2014.
+
+\bibitem{sun2017advancedelm}
+Kai Sun, Jiangshe Zhang, Chunxia Zhang, and Junying Hu.
+\newblock Generalized extreme learning machine autoencoder and a new deep
+  neural network.
+\newblock {\em Neurocomputing}, 230:374--381, 2017.
+
+\bibitem{termux_repo}
+termux.
+\newblock Termux application, 2023.
+
+\bibitem{termux_wiki}
+termux.
+\newblock The termux wiki, 2023.
+
+\bibitem{wajid2014visual}
+Rameez Wajid, Atif~Bin Mansoor, and Marius Pedersen.
+\newblock A human perception based performance evaluation of image quality
+  metrics.
+\newblock In George Bebis, Richard Boyle, Bahram Parvin, Darko Koracin, Ryan
+  McMahan, Jason Jerald, Hui Zhang, Steven~M. Drucker, Chandra Kambhamettu,
+  Maha El~Choubassi, Zhigang Deng, and Mark Carlson, editors, {\em Advances in
+  Visual Computing}, pages 303--312, Cham, 2014. Springer International
+  Publishing.
+
+\bibitem{yerram2020dice}
+Varun Yerram.
+\newblock Understanding dice coefficient, 2020.
+
+\bibitem{ying2019overfit}
+Xue Ying.
+\newblock An overview of overfitting and its solutions.
+\newblock {\em Journal of Physics: Conference Series}, 1168(2):022022, feb
+  2019.
+
+\bibitem{nerual_on_mobile_repo}
+Wenhao You and Leo Chang.
+\newblock Nerual networks on mobile devices, 2023.
+
+\bibitem{zhang2015advancedelm}
+Kai Zhang and Minxia Luo.
+\newblock Outlier-robust extreme learning machine for regression problems.
+\newblock {\em Neurocomputing}, 151:1519--1527, 2015.
+
+\bibitem{zhao2023fr}
+Chenqiu Zhao, Guanfang Dong, Shupei Zhang, Zijie Tan, and Anup Basu.
+\newblock Frequency regularization: Reducing information redundancy in
+  convolutional neural networks.
+\newblock {\em IEEE Access}, 11:106793--106802, 2023.
+
+\bibitem{zhu2005advancedelm}
+Qin-Yu Zhu, A.K. Qin, P.N. Suganthan, and Guang-Bin Huang.
+\newblock Evolutionary extreme learning machine.
+\newblock {\em Pattern Recognition}, 38(10):1759--1763, 2005.
+
+\end{thebibliography}

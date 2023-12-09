@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Homebrew)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: samplepaper.aux
+The style file: plain.bst
+Database file #1: ref.bib
+Warning--entry type for "dicescore2023" isn't style-file defined
+--line 254 of file ref.bib
+Warning--entry type for "yerram2020dice" isn't style-file defined
+--line 264 of file ref.bib
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Jian Wang , Siyuan Lu, Shui-Hua Wang, Yu-Dong Zhang" for entry wang2022elmapp
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patricia, Will Cukierski" for entry brian2017carvanadataset
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Jian Wang , Siyuan Lu, Shui-Hua Wang, Yu-Dong Zhang" for entry wang2022elmapp
+while executing---line 1090 of file plain.bst
+You've used 26 entries,
+            2118 wiz_defined-function locations,
+            644 strings with 8001 characters,
+and the built_in function-call counts, 8270 in all, are:
+= -- 778
+> -- 411
+< -- 3
++ -- 164
+- -- 133
+* -- 552
+:= -- 1382
+add.period$ -- 76
+call.type$ -- 26
+change.case$ -- 136
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 278
+empty$ -- 685
+format.name$ -- 133
+if$ -- 1743
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 15
+newline$ -- 127
+num.names$ -- 58
+pop$ -- 171
+preamble$ -- 1
+purify$ -- 110
+quote$ -- 0
+skip$ -- 223
+stack$ -- 0
+substring$ -- 477
+swap$ -- 52
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 104
+warning$ -- 0
+while$ -- 76
+width$ -- 28
+write$ -- 273
+(There were 8 error messages)
