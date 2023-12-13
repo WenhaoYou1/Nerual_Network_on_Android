@@ -23,45 +23,45 @@ Too many commas in name 1 of "Brian Shaler, DanGill, Maggie, Mark McDonald, Patr
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Jian Wang , Siyuan Lu, Shui-Hua Wang, Yu-Dong Zhang" for entry wang2022elmapp
 while executing---line 1090 of file plain.bst
-You've used 26 entries,
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            644 strings with 8001 characters,
-and the built_in function-call counts, 8270 in all, are:
-= -- 778
-> -- 411
-< -- 3
-+ -- 164
-- -- 133
-* -- 552
-:= -- 1382
-add.period$ -- 76
-call.type$ -- 26
-change.case$ -- 136
+            691 strings with 9391 characters,
+and the built_in function-call counts, 11051 in all, are:
+= -- 1043
+> -- 549
+< -- 5
++ -- 221
+- -- 181
+* -- 761
+:= -- 1831
+add.period$ -- 97
+call.type$ -- 33
+change.case$ -- 179
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 278
-empty$ -- 685
-format.name$ -- 133
-if$ -- 1743
+cite$ -- 33
+duplicate$ -- 379
+empty$ -- 899
+format.name$ -- 181
+if$ -- 2334
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 15
-newline$ -- 127
-num.names$ -- 58
-pop$ -- 171
+int.to.str$ -- 33
+missing$ -- 24
+newline$ -- 162
+num.names$ -- 72
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 110
+purify$ -- 148
 quote$ -- 0
-skip$ -- 223
+skip$ -- 295
 stack$ -- 0
-substring$ -- 477
-swap$ -- 52
-text.length$ -- 3
+substring$ -- 676
+swap$ -- 78
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
+type$ -- 128
 warning$ -- 0
-while$ -- 76
-width$ -- 28
-write$ -- 273
+while$ -- 99
+width$ -- 35
+write$ -- 351
 (There were 8 error messages)

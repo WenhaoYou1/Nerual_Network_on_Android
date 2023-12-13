@@ -13,9 +13,21 @@ Anton Akusok, {Leonardo Espinosa} Leal, Kaj-Mikael Bj{\"o}rk, and Amaury
 Alexander Argentakis.
 \newblock ubuntu-in-termux, 2023.
 
+\bibitem{vijay2017segnet}
+Vijay Badrinarayanan, Alex Kendall, and Roberto Cipolla.
+\newblock Segnet: A deep convolutional encoder-decoder architecture for image
+  segmentation.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  39(12):2481--2495, 2017.
+
 \bibitem{brian2017carvanadataset}
 Maggie Mark McDonald Patricia Will~Cukierski Brian~Shaler, DanGill.
 \newblock Carvana image masking challenge, 2017.
+
+\bibitem{brigham1988fft}
+E.~Oran Brigham.
+\newblock {\em The Fast Fourier Transform and Its Applications}.
+\newblock Prentice-Hall, Inc., USA, 1988.
 
 \bibitem{chaquopy2023}
 {Chaquopy}.
@@ -23,10 +35,23 @@ Maggie Mark McDonald Patricia Will~Cukierski Brian~Shaler, DanGill.
 \newblock \url{https://chaquo.com/chaquopy/doc/current/}, 2023.
 \newblock Accessed: 2023-12-05.
 
+\bibitem{cochran1967dft}
+W.T. Cochran, J.W. Cooley, D.L. Favin, H.D. Helms, R.A. Kaenel, W.W. Lang, G.C.
+  Maling, D.E. Nelson, C.M. Rader, and P.D. Welch.
+\newblock What is the fast fourier transform?
+\newblock {\em Proceedings of the IEEE}, 55(10):1664--1674, 1967.
+
 \bibitem{deng2015elmapp}
 ChenWei Deng, GuangBin Huang, Jia Xu, and JieXiong Tang.
 \newblock Extreme learning machines: new trends and applications.
 \newblock {\em Science China Information Sciences}, 58(2):1--16, 2015.
+
+\bibitem{foivos2020resunet}
+Foivos~I. Diakogiannis, François Waldner, Peter Caccetta, and Chen Wu.
+\newblock Resunet-a: A deep learning framework for semantic segmentation of
+  remotely sensed data.
+\newblock {\em ISPRS Journal of Photogrammetry and Remote Sensing},
+  162:94--114, 2020.
 
 \bibitem{fr_repo}
 Guanfang Dong.
@@ -60,6 +85,12 @@ Yan Fu and Shengchun Wang.
   perception.
 \newblock {\em Algorithms}, 9(4), 2016.
 
+\bibitem{fujii2021xnet}
+Haruki Fujii, Hayato Tanaka, Momoko Ikeuchi, and Kazuhiro Hotta.
+\newblock X-net with different loss functions for cell image segmentation.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR) Workshops}, pages 3793--3800, June 2021.
+
 \bibitem{huang2006elmapp}
 Guang-Bin Huang, Qin-Yu Zhu, and Chee-Kheong Siew.
 \newblock Extreme learning machine: Theory and applications.
@@ -77,6 +108,11 @@ Yong-Deok Kim, Eunhyeok Park, Sungjoo Yoo, Taelim Choi, Lu~Yang, and Dongjun
 \newblock Compression of deep convolutional neural networks for fast and low
   power mobile applications, 2016.
 
+\bibitem{henri1982fft}
+Henri~J. Nussbaumer.
+\newblock {\em The Fast Fourier Transform}, pages 80--111.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1982.
+
 \bibitem{dicescore2023}
 {OECD.AI}.
 \newblock Dice score, 2023.
@@ -85,6 +121,12 @@ Yong-Deok Kim, Eunhyeok Park, Sungjoo Yoo, Taelim Choi, Lu~Yang, and Dongjun
 \bibitem{termux_overview}
 Masud Rana.
 \newblock Open and accessible education with virtual reality, 2022.
+
+\bibitem{james1996dft}
+James~C. Schatzman.
+\newblock Accuracy of the discrete fourier transform and the fast fourier
+  transform.
+\newblock {\em SIAM Journal on Scientific Computing}, 17(5):1150--1166, 1996.
 
 \bibitem{ding2014elmapp}
 Ru~Nie Shifei~Ding, Xinzheng~Xu.
