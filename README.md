@@ -6,9 +6,13 @@ In this repository, we introduce two methods to deploy Frequency Regularization 
 
 ### Repository Structure
 
+The folder `NOM` is code of our Android application. Folders `future_work`, `class_presentation`,`proposal_and_literature_review`, `report`, `source_code_frequency_regularization` are the related documentation or materials used in this project.
+
 ```
 .
 ├── README.md
+├── NOM (code of Android application)
+│   └── ...
 ├── future_work
 │   └── future_plan.pdf
 ├── class_presentation
@@ -100,6 +104,12 @@ In this repository, we introduce two methods to deploy Frequency Regularization 
    ```
 
 4. Run the source code and select the image you want to implement segmentation.
+
+### Run Android Apllication by APK
+
+1. Download the APK on your own Android phone [[click here]](https://drive.google.com/file/d/1avjNmbqO9Ja4_klfesDFt6P9S98Cse32/view?usp=sharing).
+
+2. Click the Application on your own phone.
 
 ## Current and Future Plans
 

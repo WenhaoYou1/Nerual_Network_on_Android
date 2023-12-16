@@ -1,0 +1,17 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/btxcy/Documents/GitHub/NOM/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/btxcy/Documents/GitHub/NOMApp/NOM/app/src/main/res/layout/activity_main.xml" value="0.2265625" />
+        <entry key="..\:/Users/btxcy/Documents/GitHub/NOMApp/NOM/app/src/main/res/layout/camera.xml" value="0.2265625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
